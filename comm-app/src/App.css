@@ -30,6 +30,7 @@ label {
   margin-right: 10px;
   margin-left: 10px;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 input {
@@ -37,4 +38,11 @@ input {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+button {
+  margin-left: 10px;
+  background-color: rgb(3, 59, 76);
+  color: whitesmoke !important;
+  padding: 8px;
 }
