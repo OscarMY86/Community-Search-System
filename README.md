@@ -2,7 +2,7 @@
 
 ## Frontend
 We use React to build the frontend.
-### 1. Set up up the environment
+### 1. Set up the environment
 **Install node.js**
 ---
 For Windows, install from https://nodejs.org/en/download
@@ -30,7 +30,7 @@ Mostly change the file in src folder. Change the App.js file for the home page.
 We use Flask to build the backend server.
 ### Set up the virtual environment(Optional)
 For more detail, see https://docs.python.org/3/library/venv.html
-### 1. Set up up the environment
+### 1. Set up the environment
 **Install packages**
 ```
 pip install -r requirements.txt
