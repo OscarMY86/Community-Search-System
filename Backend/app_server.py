@@ -7,12 +7,13 @@ CORS(app)
 
 @app.route('/')
 def index():
-    return "Testing server"
+    return "Backend server is running"
 
 @app.route('/search', methods=['GET'])
 def search():
     search_name = request.args.get('name')
     k = request.args.get('k')
+    method = request.args.get('option')
 
     def name_id(name):
         with open('../DBLP-Geneartion/dataset/name2id.txt', 'r', encoding='utf-8') as file:
@@ -27,7 +28,7 @@ def search():
         return jsonify({'error': 'Unfound name'})
 
     with open("search.txt", "w") as f:
-        f.write(str(id) + " " + search_name + " " + str(k) + "\n")
+        f.write("Id: " + str(id) + "\n" + "Name: " + search_name + "\n" + "k-value: " + str(k) + "\n" + "Method: " + method )
 
 
     ###### Write the input id and k-value to 4 files ######

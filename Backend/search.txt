@@ -1,1 +1,4 @@
-2228043 Man Hon Wong 0002 5
+Id: 495623
+Name: Oscar
+k-value: 1
+Method: clique
