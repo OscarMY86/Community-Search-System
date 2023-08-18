@@ -80,8 +80,8 @@ def search():
     #         f.write(str(id) + " " + str(k) + "\n")
 
     ###### Run the Algorithm ######
-    command = ['../SurveyCS/SurveyCS/ktruss/online/ktcom', '../SurveyCS/SurveyCS/data/Astroph/']
-    result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    # command = ['../SurveyCS/SurveyCS/ktruss/online/ktcom', '../SurveyCS/SurveyCS/data/Astroph/']
+    # result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
     # if result.returncode == 0:
     #     output = result.stdout.decode('utf-8')

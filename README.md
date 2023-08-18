@@ -30,20 +30,20 @@ Mostly change the file in src folder. Change the App.js file for the home page.
 We use Flask to build the backend server.
 ### Set up the virtual environment(Optional)
 For more detail, see https://docs.python.org/3/library/venv.html
+> Don't push your virtual environment to GitHub
 ### 1. Set up the environment
 **Install packages**
 ```
+cd ./Backend
 pip install -r requirements.txt
 ```
 ### 2. Start the backend
 Windows:
 ```
-cd ./Backend
 py app_server.py
 ```
 Linux:
 ```
-cd ./Backend
 python3 app_server.py
 ```
 It will run in http://localhost:5000

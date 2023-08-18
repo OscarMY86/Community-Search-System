@@ -6,7 +6,7 @@ function App() {
   const [name, setName] = useState('');
   const [k, setk] = useState('');
   const [selectedOption, setSelectedOption] = useState('');
-  const [graphData, setGraphData] = useState('');
+  const [graphData, setGraphData] = useState(null);
   const [error, setError] = useState(null);
 
   const handleNameChange = (event) => {
@@ -26,6 +26,7 @@ function App() {
   
   const handleSubmit = (event) => {
     event.preventDefault();
+    setGraphData(null);
 
     // Construct the query string
     const queryString = `name=${encodeURIComponent(name)}&k=${encodeURIComponent(k)}&option=${encodeURIComponent(selectedOption)}`;
@@ -46,7 +47,6 @@ function App() {
         }
       })
       .catch((error) => {
-        console.error('Error:', error);
         setError('Make sure you input correctly.');
         setGraphData(null);
       });
@@ -56,10 +56,13 @@ function App() {
     setName('');
     setk('');
     setSelectedOption('');
+    setGraphData(null);
+    setError(null);
   };
   
   return (
     <div className="container">
+      {/* <ForceDirectedGraph graphData={graphData} /> */}
       <h1>Social Network: Community Search Project</h1>
       <p> Please enter the search name and k value to search:</p>
       <form onSubmit={handleSubmit}>
@@ -81,13 +84,9 @@ function App() {
         <button onClick={(event) => handleSubmit(event)}>Submit</button>
         <button type='button' onClick={handleReset}>Reset</button>
       </form>
+      { {graphData} !== null ? <ForceDirectedGraph graphData={graphData} /> : null }
       {error && <div className="error">{error}</div>}
-      <div>
-        {graphData !== null ? ( <ForceDirectedGraph graphData={graphData} />
-        ) : (
-          <div>No graph data available.</div>
-        )}
-      </div>
+
     </div>
   );
 }
