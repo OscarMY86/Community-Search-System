@@ -1,5 +1,6 @@
 # Social Network: Community search project
-
+## Download the dataset
+Since the dataset is huge, I did not put it here. Please download the dblp.xml from https://dblp.org/faq/How+can+I+download+the+whole+dblp+dataset.html and put it in `/DBLP-Geneartion/dataset/dblp.xml`
 ## Frontend
 We use React to build the frontend.
 ### 1. Set up the environment
