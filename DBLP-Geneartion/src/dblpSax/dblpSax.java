@@ -42,6 +42,10 @@ public class dblpSax{
          writename3.createNewFile(); 
          BufferedWriter edgesWeightOut = new BufferedWriter(new FileWriter(writename3));
 
+         File writename4 = new File("../../dataset/new_edges.txt");
+         writename4.createNewFile(); 
+         BufferedWriter newedgesOut = new BufferedWriter(new FileWriter(writename4));
+
          
          Map<String, Integer> hmedgesWeight = new HashMap<String, Integer>();
          
@@ -61,10 +65,15 @@ public class dblpSax{
                 if (ss[0].equals("16837") || ss[1].equals("16837")) {
                     JianPeiCoAuthorsNum++;
                 }
-                edgesWeightOut.write("#" + ss[0] + "#" + "    " + "#" + ss[1] + "#" + "   " + value + "\r\n");
+                edgesWeightOut.write(ss[0] + "  " + ss[1] + "   " + value + "\r\n");
                 edgesWeightOut.flush();
+                
+
+                // Add a new_edges.txt where only contain the nodes which have at least 6 weight
+                newedgesOut.write(ss[0] + "  " + ss[1] + "   " + "\r\n");
+                newedgesOut.flush();
              }
-             // =========== Modified part end ===========
+            // =========== Modified part end ===========
 
             //  if(ss[0].equals("16837") || ss[1].equals("16837")){
             //      JianPeiCoAuthorsNum++;
@@ -194,9 +203,9 @@ class UserHandler extends DefaultHandler {
                       String createExchange = Integer.toString(authorsToGroup.get(j)) + "   " + Integer.toString(authorsToGroup.get(i));
                       
                       
-                      if(hmedgesWeight.containsKey(create)==true && hmedgesWeight.get(create) >= 6 ) //Modified
+                      if(hmedgesWeight.containsKey(create)==true ) 
                           hmedgesWeight.put(create, hmedgesWeight.get(create) + 1);
-                      else if(hmedgesWeight.containsKey(createExchange)==true && hmedgesWeight.get(createExchange) >= 6 ){ //Modified
+                      else if(hmedgesWeight.containsKey(createExchange)==true ){ 
                           hmedgesWeight.put(createExchange, hmedgesWeight.get(createExchange) + 1);
                       }
                       else{
