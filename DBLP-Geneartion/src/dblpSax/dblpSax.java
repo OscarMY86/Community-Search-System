@@ -42,6 +42,10 @@ public class dblpSax{
          writename3.createNewFile(); 
          BufferedWriter edgesWeightOut = new BufferedWriter(new FileWriter(writename3));
 
+         File writename4 = new File("../../dataset/new_edges.txt");
+         writename4.createNewFile(); 
+         BufferedWriter newedgesOut = new BufferedWriter(new FileWriter(writename4));
+
          
          Map<String, Integer> hmedgesWeight = new HashMap<String, Integer>();
          
@@ -56,11 +60,26 @@ public class dblpSax{
              String key = entry.getKey();
              int value = entry.getValue();
              String[] ss = key.split("\\s+");
-             if(ss[0].equals("16837") || ss[1].equals("16837")){
-                 JianPeiCoAuthorsNum++;
+            // =========== Modified part ===========
+             if (value >= 6) {
+                if (ss[0].equals("16837") || ss[1].equals("16837")) {
+                    JianPeiCoAuthorsNum++;
+                }
+                edgesWeightOut.write(ss[0] + "  " + ss[1] + "   " + value + "\r\n");
+                edgesWeightOut.flush();
+                
+
+                // Add a new_edges.txt where only contain the nodes which have at least 6 weight
+                newedgesOut.write(ss[0] + "  " + ss[1] + "   " + "\r\n");
+                newedgesOut.flush();
              }
-             edgesWeightOut.write("#" + ss[0] + "#" + "    " + "#" + ss[1] + "#" + "   " + value + "\r\n");               
-             edgesWeightOut.flush();
+            // =========== Modified part end ===========
+
+            //  if(ss[0].equals("16837") || ss[1].equals("16837")){
+            //      JianPeiCoAuthorsNum++;
+            //  }
+            //  edgesWeightOut.write("#" + ss[0] + "#" + "    " + "#" + ss[1] + "#" + "   " + value + "\r\n");               
+            //  edgesWeightOut.flush();
          }
          
          //System.out.println(x);
@@ -153,7 +172,8 @@ class UserHandler extends DefaultHandler {
               hmauthorString2int.put(author, authorValue);
               try{
                   
-                  authorString2numOut.write(author + "    " + "#" + authorValue + "#" + "\r\n");           
+                //   authorString2numOut.write(author + "    " + "#" + authorValue + "#" + "\r\n");
+                  authorString2numOut.write(author + "    " + authorValue + "\r\n");
                   authorString2numOut.flush();
 
                   }catch(IOException e){
@@ -183,15 +203,15 @@ class UserHandler extends DefaultHandler {
                       String createExchange = Integer.toString(authorsToGroup.get(j)) + "   " + Integer.toString(authorsToGroup.get(i));
                       
                       
-                      if(hmedgesWeight.containsKey(create)==true)
+                      if(hmedgesWeight.containsKey(create)==true ) 
                           hmedgesWeight.put(create, hmedgesWeight.get(create) + 1);
-                      else if(hmedgesWeight.containsKey(createExchange)==true){
+                      else if(hmedgesWeight.containsKey(createExchange)==true ){ 
                           hmedgesWeight.put(createExchange, hmedgesWeight.get(createExchange) + 1);
                       }
                       else{
                           hmedgesWeight.put(create,1);
                           try{
-                              edgesOut.write("#" + authorsToGroup.get(i) + "#" + " " + "#" + authorsToGroup.get(j) + "#" + "\r\n");
+                              edgesOut.write( authorsToGroup.get(i) + " "  + authorsToGroup.get(j) + "\r\n");
                               edgesOut.flush();
                           } catch(Exception e){
                               System.out.println("edgesWeightOut.write(authorsToGroup.get(i) problem. ");
