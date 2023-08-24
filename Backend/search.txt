@@ -1,4 +1,4 @@
 Id: 495623
 Name: Oscar
-k-value: 5
-Method: core
+k-value: 8
+Method: truss

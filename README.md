@@ -23,7 +23,11 @@ npm --version
 cd ./comm-app
 npm start
 ```
-It will run in http://localhost:3000
+Notes: If there is problem about `react-scripts start` or `comm-app@0.1.0 start`, run:
+```
+install npm
+```
+Then, start it again. It will run in http://localhost:3000
 ### 3. Modify the frontend
 Mostly change the file in src folder. Change the App.js file for the home page.
 

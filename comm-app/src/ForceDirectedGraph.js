@@ -87,6 +87,10 @@ const ForceDirectedGraph = ({ graphData }) =>{
       }
     }, [graphData]);
 
+    if (!graphData) {
+        return null; // Return null if graphData is null
+    }
+
     return <svg ref={svgRef} width={900} height={500}></svg>;
 }
 

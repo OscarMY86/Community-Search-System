@@ -6,7 +6,7 @@ function App() {
   const [name, setName] = useState('');
   const [k, setk] = useState('');
   const [selectedOption, setSelectedOption] = useState('');
-  const [graphData, setGraphData] = useState(null);
+  const [graphData, setGraphData] = useState("");
   const [error, setError] = useState(null);
 
   const handleNameChange = (event) => {
@@ -26,37 +26,38 @@ function App() {
   
   const handleSubmit = (event) => {
     event.preventDefault();
+    setError(null);
     setGraphData(null);
-
+    
     // Construct the query string
     const queryString = `name=${encodeURIComponent(name)}&k=${encodeURIComponent(k)}&option=${encodeURIComponent(selectedOption)}`;
-
+    
     // Make the GET request to the Flask backend
     // fetch(`http://localhost:5000/search?${queryString}`) // Search API
     fetch(`http://localhost:5000/test?${queryString}`) // Test API
-      .then((response) => response.json())
-      .then((result) => {
-        // Handle the response from the backend
-        if (result == null){
-          setGraphData(null);
-          setError('Invalid input');
-        } else {
-          setGraphData(result);
-          setError(null);
-          console.log(result);
-        }
-      })
-      .catch((error) => {
-        setError('Make sure you input correctly.');
+    .then((response) => response.json())
+    .then((result) => {
+      // Handle the response from the backend
+      if (result == null){
         setGraphData(null);
-      });
+        setError('Invalid input');
+      } else {
+        setGraphData(result);
+        setError(null);
+        console.log(result);
+      }
+    })
+    .catch((error) => {
+      setError('Make sure you input correctly.');
+      setGraphData(null);
+    });
   };
-
+  
   const handleReset = () => {
     setName('');
     setk('');
     setSelectedOption('');
-    setGraphData(null);
+    setGraphData('');
     setError(null);
   };
   
@@ -75,10 +76,10 @@ function App() {
           <input type="integer" value={k} onChange={handlekChange} placeholder="Input integer"/> 
           <select value={selectedOption} onChange={handleOptionChange}>
             <option value="">Please select Method</option>
-            <option value="core">Core</option>
-            <option value="truss">Truss</option>
-            <option value="clique">Clique</option>
-            <option value="ecc">Ecc</option>
+            <option value="core">Core (available)</option>
+            <option value="truss">Truss (available)</option>
+            <option value="clique">Clique (unavailable)</option>
+            <option value="ecc">Ecc (unavailable)</option>
           </select>
         </dic>
         <button onClick={(event) => handleSubmit(event)}>Submit</button>
