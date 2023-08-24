@@ -33,7 +33,7 @@ def test():
     with open("search.txt", "w") as f:
         f.write("Id: " + str(id) + "\n" + "Name: " + search_name + "\n" + "k-value: " + str(k) + "\n" + "Method: " + method )
 
-    with open('./testset/test1.json') as json_file:
+    with open('./testset/test3.json') as json_file:
         data = json.load(json_file)
     return jsonify(data)
 

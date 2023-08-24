@@ -1,16 +1,1 @@
-{
-    "nodes": [
-      { "id": "A", "group": 1 },
-      { "id": "B", "group": 2 },
-      { "id": "C", "group": 1 },
-      { "id": "D", "group": 2 },
-      { "id": "E", "group": 3 }
-    ],
-    "links": [
-      { "source": "A", "target": "B", "value": 5 },
-      { "source": "B", "target": "C", "value": 3 },
-      { "source": "C", "target": "D", "value": 2 },
-      { "source": "D", "target": "E", "value": 4 },
-      { "source": "E", "target": "A", "value": 1 }
-    ]
-  }
+[{"source": "1077429", "target": "1494795"}, {"source": "148395", "target": "1077429"}, {"source": "148395", "target": "1494795"}, {"source": "210625", "target": "1077429"}, {"source": "210625", "target": "1494795"}, {"source": "294947", "target": "1077429"}, {"source": "294947", "target": "1494795"}, {"source": "667063", "target": "1077429"}, {"source": "148395", "target": "667063"}, {"source": "148395", "target": "210625"}, {"source": "148395", "target": "294947"}, {"source": "210625", "target": "667063"}, {"source": "210625", "target": "294947"}, {"source": "294947", "target": "667063"}]
