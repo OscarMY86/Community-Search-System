@@ -1,0 +1,14 @@
+version: '3'
+services:
+  backend-server:
+    build: .
+    volumes:
+      - ./SurveyCS:/app/SurveyCS
+      - ./app_server.py:/app/app_server.py
+      - ./search.txt:/app/search.txt
+      - ./name2id.txt:/app/name2id.txt
+      - ./converter.py:/app/converter.py
+      - ./testset/test1.json:/app/testset/test1.json
+      - ./testset/test3.json:/app/testset/test3.json
+    ports:
+      - 5000:5000
