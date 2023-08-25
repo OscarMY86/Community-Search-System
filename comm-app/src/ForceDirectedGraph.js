@@ -107,7 +107,7 @@ const ForceDirectedGraph = ({ graphData }) => {
       if (graphData) {
         const width = 928;
         const height = 600;
-        // const color = d3.scaleOrdinal(d3.schemeCategory10);
+        const color = d3.scaleOrdinal(d3.schemeCategory10);
   
         const links = graphData.map(d => ({ ...d }));
         const nodes = [...new Set(links.flatMap(link => [link.source, link.target]))]
