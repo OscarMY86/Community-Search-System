@@ -13,10 +13,11 @@ For Linux,
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - &&\
 sudo apt-get install -y nodejs
 ```
-Check if it can install correctly
+Check if it can install correctly and install d3.js
 ```
 node --version
 npm --version
+npm install d3
 ```
 ### 2. Start the frontend
 ```

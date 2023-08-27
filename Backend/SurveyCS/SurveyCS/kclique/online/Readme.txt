@@ -12,8 +12,8 @@ g++ -std=c++14 -O3 src/*.cpp -o kclique
 #The format of the graph.txt should be processed using the following command:
 ./run graph-cp ../../data/Astroph/
 
-#The program can then be run with three parameters: 1.search method, 2.data folder, 3. output file prefix
+#The program can then be run with three parameters: 1.search method, 2.data folder, 3. output file prefix # change is, run this 
 ./kclique ../../data/Astroph/ b
 
-#To further process the community nodelist to edgelist with 4 parameters: 1.gen-graph method name, 2. data folder, 3.community nodelist file prefix, 4.number of querynodes:
+#To further process the community nodelist to edgelist with 4 parameters: 1.gen-graph method name, 2. data folder, 3.community nodelist file prefix, 4.number of querynodes: # change is, run this 
 ./run gen-graph ../../dataAstroph/ output_clique_ 5 

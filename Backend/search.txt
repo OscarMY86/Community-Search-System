@@ -1,4 +1,4 @@
-Id: 1077429
-Name: Nils Skotara
-k-value: 5
+Id: 495623
+Name: Oscar
+k-value: 6
 Method: truss

@@ -33,8 +33,8 @@ function App() {
     const queryString = `name=${encodeURIComponent(name)}&k=${encodeURIComponent(k)}&option=${encodeURIComponent(selectedOption)}`;
     
     // Make the GET request to the Flask backend
-    // fetch(`http://localhost:5000/search?${queryString}`) // Search API
-    fetch(`http://localhost:5000/test?${queryString}`) // Test API
+    fetch(`http://localhost:5000/search?${queryString}`) // Search API
+    // fetch(`http://localhost:5000/test?${queryString}`) // Test API
     .then((response) => response.json())
     .then((result) => {
       // Handle the response from the backend

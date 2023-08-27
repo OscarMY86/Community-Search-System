@@ -61,7 +61,7 @@ public class dblpSax{
              int value = entry.getValue();
              String[] ss = key.split("\\s+");
             // =========== Modified part ===========
-             if (value >= 6) {
+             if (value >= 8) {
                 if (ss[0].equals("16837") || ss[1].equals("16837")) {
                     JianPeiCoAuthorsNum++;
                 }

@@ -9,17 +9,20 @@ def convert_to_json(txt_file_path):
 
     # Process each line and convert it to JSON format
     for line in lines:
-        pair = line.split()
-        if len(pair) == 2:
-            data.append({
-                'source': pair[0],
-                'target': pair[1]
-            })
+        line = line.strip()
+        if line:
+            values = line.split()
+            if len(values) == 2:
+                source, target = values
+                entry = {'source': source.strip(), 'target': target.strip()}
+                data.append(entry)
+            
 
     # Convert the data to JSON
-    json_data = json.dumps(data)
+    with open('result.json', 'w') as file:
+        json_data = json.dumps(data)
+        file.write(json_data)
 
-    return json_data
 
 # with open('./SurveyCS/SurveyCS/data/Astroph/trusscom/495623.txt', 'r') as file:
 #     lines = file.readlines()

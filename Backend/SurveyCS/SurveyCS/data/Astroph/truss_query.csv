@@ -21,3 +21,7 @@ node id,query k,community number,running time(ms)
 495623,6,1,13865.9
 node id,query k,community number,running time(ms)
 495623,5,1,12679.2
+node id,query k,community number,running time(ms)
+495623,6,1,4879.47
+node id,query k,community number,running time(ms)
+495623,6,1,5976.23
