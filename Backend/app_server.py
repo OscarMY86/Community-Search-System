@@ -86,8 +86,7 @@ def search():
         converter.convert_to_json(txt_file_path)
 
     with open('./testset/result.json') as json_file:
-        json_data = json.load(json_file
-                              )
+        json_data = json.load(json_file)
     return jsonify(json_data)
 
 if __name__ == '__main__':
