@@ -1,55 +1,18 @@
-.container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-}
+@media screen and (max-width: 400px) {
+  #features {
+    padding: 20px;
+    width: 111%;
+  }
+  #about,
+  #services,
+  #testimonials,
+  #team,
+  #contact,
+  #footer {
+    width: 111%;
+  }
 
-.title {
-  white-space: nowrap;
-  /* overflow: hidden; */
-  text-overflow: ellipsis;
-}
-
-h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  white-space: nowrap;
-  align-items: center;
-}
-
-p {
-  margin-bottom: 20px;
-}
-
-.input-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-label {
-  margin-right: 10px;
-  margin-left: 10px;
-  font-weight: bold;
-  white-space: nowrap;
-}
-
-input {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button {
-  margin-left: 50px;
-  background-color: rgb(3, 59, 76);
-  color: whitesmoke !important;
-  padding: 8px;
-}
-
-select {
-  margin-left: 10px;
-  padding: 8px;
+  #portfolio {
+    width: 110%;
+  }
 }

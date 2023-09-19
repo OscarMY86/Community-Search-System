@@ -1,0 +1,57 @@
+{
+  "Header": {
+    "title": "This is our Final Year Project",
+    "paragraph": "In this website, we are going to present our community searching to the users."
+  },
+  "About": {
+    "paragraph": "We are the students from the Chinese University of Hong kong and studying computer engineering and computer science. The website provide the community search function for academic use."
+  },
+
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "John Doe",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Ming Yip",
+      "job": "Computer Engineer"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Oscar",
+      "job": "Programmer"
+    }
+  ],
+  "Contact": {
+    "address": "The Chinese University of Hong Kong, Shatin, NT, Hong Kong SAR, The People's Republic of China",
+    "phone": "(852) 3943 7000 / (852) 3943 6000",
+    "email": "1155145400@link.cuhk.edu.hk  1155159022@link.cuhk.edu.hk",
+    "facebook": "https://www.facebook.com/CUHKofficial/?locale=zh_HK",
+    "twitter": "https://twitter.com/CUHKofficial",
+    "youtube": "https://www.youtube.com/channel/UCeG0cjZClabYTnYZldpCNwQ"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "K-core",
+      "text": "K-Core is a measure that can help identify small interlinked core areas on a network. To be included in the K-Core, an entity must be linked to at least k other entities in the group."
+    },
+    {
+      "icon": "fa fa-bullhorn",
+      "title": "K-truss",
+      "text": "K-truss is a building truss in which the vertical member and two oblique members in each panel form a K."
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "K-clique",
+      "text": "K-clique in a graph is a sub-graph where the distance between any two vertices is no greater than k."
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "K-ecc",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    }
+  ]
+}
