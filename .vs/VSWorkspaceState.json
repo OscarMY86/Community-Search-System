@@ -1,12 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Backend",
     "\\comm-app",
     "\\comm-app\\public",
-    "\\comm-app\\public\\css",
     "\\comm-app\\public\\fonts",
     "\\comm-app\\public\\fonts\\font-awesome",
-    "\\comm-app\\public\\fonts\\font-awesome\\css",
+    "\\comm-app\\public\\fonts\\font-awesome\\fonts",
+    "\\comm-app\\public\\fonts\\fonts",
     "\\comm-app\\src",
     "\\comm-app\\src\\components",
     "\\comm-app\\src\\data"

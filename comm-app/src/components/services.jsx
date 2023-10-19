@@ -69,31 +69,48 @@ export const Services = (props) => {
                       Please enter the search name and k value to search:
           </p>
         </div>
-        <div className="row">
+              <div className="row">   
+                  <table>
+                      <tr>
+                  <th width = '300'>
                   <div className="input-container">
                       <label>Search name:</label>
                       
                   </div>
-                  <div className="input-container">
-                      <input type="text" value={name} onChange={handleNameChange} placeholder="Input search name" />
+                  <div className="input-box">
+                      <input className= "input-text" type="text" value={name} onChange={handleNameChange} placeholder="Input search name" />
                   </div>
                   <div className="input-container">
                       <label>K-value:</label>
-                      <input type="integer" value={k} onChange={handlekChange} placeholder="Input integer" />
-                      <select value={selectedOption} onChange={handleOptionChange}>
-                          <option value="">Please select Method</option>
-                          <option value="core">Core (available)</option>
-                          <option value="truss">Truss (available)</option>
-                          <option value="clique">Clique (unavailable)</option>
-                          <option value="ecc">Ecc (unavailable)</option>
-                      </select>
+                      
                   </div>
-                      <button onClick={(event) => handleSubmit(event)}>Submit</button>
-                      <button type='button' onClick={handleReset}>Reset</button>
+                  <div className="input-box">
+                                  <input className="input-text" type="integer" value={k} onChange={handlekChange} placeholder="Input integer" />
                   
+                              </div>
+                              <div className="input-box">
+                                  <select value={selectedOption} onChange={handleOptionChange}>
+                                      <option value="">Please select Method</option>
+                                      <option value="core">Core (available)</option>
+                                      <option value="truss">Truss (available)</option>
+                                      <option value="clique">Clique (unavailable)</option>
+                                      <option value="ecc">Ecc (unavailable)</option>
+                                  </select>
+                              </div>
+                  <div className = "input-button">
+                      <button className= "button1" onClick={(event) => handleSubmit(event)}>Submit</button>
+                                    
+                                  <button className="button2" type='button' onClick={handleReset}>Reset</button>
+                              </div>
+                          </th>
+                          <th width='1000px'>
+                          <div className="graph">
                   {{ graphData } !== null ? <ForceDirectedGraph graphData={graphData} /> : null}
-                  {error && <div className="error">{error}</div>}
-
+                                  {error && <div className="error">{error}</div>}
+                              </div>
+                          </th>
+                      </tr>
+                  </table>
         </div>
       </div>
     </div>
