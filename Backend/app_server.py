@@ -3,6 +3,7 @@ from flask_cors import CORS
 import json
 import subprocess
 import converter
+import os
 
 app = Flask(__name__)
 CORS(app)
@@ -76,6 +77,7 @@ def search():
         result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         txt_file_path = f'./SurveyCS/SurveyCS/data/Astroph/corecom/{id}.txt'
         converter.convert_to_json(txt_file_path)
+        os.remove(txt_file_path)
 
     if (method == "truss"):
         with open("./SurveyCS/SurveyCS/data/Astroph/truss_querynodes.txt", "w", encoding='utf-8') as f:
@@ -84,8 +86,9 @@ def search():
         result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         txt_file_path = f'./SurveyCS/SurveyCS/data/Astroph/trusscom/{id}.txt'
         converter.convert_to_json(txt_file_path)
+        os.remove(txt_file_path)
 
-    with open('./testset/result.json') as json_file:
+    with open('result.json') as json_file:
         json_data = json.load(json_file)
     return jsonify(json_data)
 
