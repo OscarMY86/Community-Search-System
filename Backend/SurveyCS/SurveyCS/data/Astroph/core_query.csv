@@ -2,3 +2,5 @@ node id,query k,community number,running time(ms)
 1723,3,1,1530.7
 node id,query k,community number,running time(ms)
 1723,4,1,2203.08
+node id,query k,community number,running time(ms)
+1800,6,1,1287.46

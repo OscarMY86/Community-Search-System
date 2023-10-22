@@ -41,31 +41,20 @@ def convert_to_json(txt_file_path):
     # Open the edges.txt file and read line by line
     with open(txt_file_path, 'r') as f:
         for line in f:
-
             parts = line.split()
-
-            # If the line is not '-1', process the nodes and the edge
             if parts[0] != '-1':
-                # Get the nodes ids
                 node1, node2 = parts[0], parts[1]
-
-                # Add the nodes to the nodes dictionary
                 if node1 not in nodes:
                     nodes[node1] = community
                 if node2 not in nodes:
                     nodes[node2] = community
 
-                # Add the edge to the links list
                 links.append({'source': node1, 'target': node2})
-            else:
-                # If the line is '-1', increment the community number
+            else: 
                 community += 1
 
     nodes_list = [{'id': id, 'group': group} for id, group in nodes.items()]
     final_dict = {'nodes': nodes_list, 'links': links}
-
-    # with open('edges.json', 'w') as f:
-    #     json.dump(final_dict, f, indent=4)
 
     if os.path.exists('result.json'):
         os.remove('result.json')
