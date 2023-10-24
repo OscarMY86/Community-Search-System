@@ -12,35 +12,35 @@ CORS(app)
 def index():
     return "Backend server is running"
 
-@app.route('/test', methods = {'GET'})
-def test():
+# @app.route('/test', methods = {'GET'})
+# def test():
 
-    ### Same from search.py ###
-    search_name = request.args.get('name')
-    k = request.args.get('k')
-    method = request.args.get('option')
+#     ### Same from search.py ###
+#     search_name = request.args.get('name')
+#     k = request.args.get('k')
+#     method = request.args.get('option')
 
-    def name_id(name):
-        with open('name2id.txt', 'r', encoding='utf-8') as file:
-            for line in file:
-                parts = line.split()
-                if ' '.join(parts[:-1]) == name:
-                    return int(parts[-1])
-        return -1
+#     def name_id(name):
+#         with open('name2id.txt', 'r', encoding='utf-8') as file:
+#             for line in file:
+#                 parts = line.split()
+#                 if ' '.join(parts[:-1]) == name:
+#                     return int(parts[-1])
+#         return -1
 
-    id = name_id(search_name)
-    if id == -1:
-        return None
+#     id = name_id(search_name)
+#     if id == -1:
+#         return None
 
-    with open("search.txt", "w") as f:
-        f.write("Id: " + str(id) + "\n" + "Name: " + search_name + "\n" + "k-value: " + str(k) + "\n" + "Method: " + method )
+#     with open("search.txt", "w") as f:
+#         f.write("Id: " + str(id) + "\n" + "Name: " + search_name + "\n" + "k-value: " + str(k) + "\n" + "Method: " + method )
 
-    txt_file_path = f'./SurveyCS/SurveyCS/data/Astroph/trusscom/{id}.txt'
-    json_data = converter.convert_to_json(txt_file_path)
+#     txt_file_path = f'./SurveyCS/SurveyCS/data/Astroph/trusscom/{id}.txt'
+#     json_data = converter.convert_to_json(txt_file_path)
 
-    # with open('./testset/test3.json') as json_file:
-    #     data = json.load(json_file)
-    return jsonify(json_data)
+#     # with open('./testset/test3.json') as json_file:
+#     #     data = json.load(json_file)
+#     return jsonify(json_data)
 
 @app.route('/search', methods=['GET'])
 def search():
@@ -65,7 +65,7 @@ def search():
     with open("search.txt", "w") as f:
         f.write("Id: " + str(id) + "\n" + "Name: " + search_name + "\n" + "k-value: " + str(k) + "\n" + "Method: " + method )
 
-    ###### Write the input id and k-value to 4 files ######
+    ###### Write the input id and k-value ######
 
     if (method == "clique" or method == "ecc"):
         return None
@@ -88,7 +88,7 @@ def search():
         converter.convert_to_json(txt_file_path)
         os.remove(txt_file_path)
 
-    with open('result.json') as json_file:
+    with open('./testset/result.json') as json_file:
         json_data = json.load(json_file)
     return jsonify(json_data)
 
