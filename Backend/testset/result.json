@@ -1,0 +1,1522 @@
+{
+    "nodes": [
+        {
+            "id": "495623",
+            "name": "Oscar    ",
+            "group": 1,
+            "neighbor_number": 5,
+            "neighbor_distance": 0
+        },
+        {
+            "id": "495624",
+            "name": "Wenhuan Sun   ",
+            "group": 1,
+            "neighbor_number": 5,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "495625",
+            "name": "Saul Schaffer   ",
+            "group": 1,
+            "neighbor_number": 12,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "9928",
+            "name": "Atsuo Takanishi   ",
+            "group": 1,
+            "neighbor_number": 44,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "317470",
+            "name": "Melissa Castine   ",
+            "group": 1,
+            "neighbor_number": 19,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "495618",
+            "name": "Faqi Hu   ",
+            "group": 1,
+            "neighbor_number": 5,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "2606623",
+            "name": "Pawel M. Orzechowski   ",
+            "group": 1,
+            "neighbor_number": 5,
+            "neighbor_distance": 2
+        },
+        {
+            "id": "3146902",
+            "name": "Santanu Sharma   ",
+            "group": 1,
+            "neighbor_number": 5,
+            "neighbor_distance": 2
+        },
+        {
+            "id": "2759896",
+            "name": "Asa T. Furman   ",
+            "group": 1,
+            "neighbor_number": 7,
+            "neighbor_distance": 2
+        },
+        {
+            "id": "1842131",
+            "name": "Bernhard Thom   ",
+            "group": 1,
+            "neighbor_number": 6,
+            "neighbor_distance": 2
+        },
+        {
+            "id": "1025197",
+            "name": "Daniel Homocianu   ",
+            "group": 1,
+            "neighbor_number": 6,
+            "neighbor_distance": 2
+        },
+        {
+            "id": "566761",
+            "name": "Adam Tutko   ",
+            "group": 1,
+            "neighbor_number": 5,
+            "neighbor_distance": 2
+        },
+        {
+            "id": "1022134",
+            "name": "Takuya Ehiro   ",
+            "group": 1,
+            "neighbor_number": 13,
+            "neighbor_distance": 2
+        },
+        {
+            "id": "1866710",
+            "name": "Sarbani Mishra   ",
+            "group": 1,
+            "neighbor_number": 8,
+            "neighbor_distance": 2
+        },
+        {
+            "id": "2142073",
+            "name": "Zeynep Engin   ",
+            "group": 1,
+            "neighbor_number": 8,
+            "neighbor_distance": 2
+        },
+        {
+            "id": "2142072",
+            "name": "D. V. Cheesman   ",
+            "group": 1,
+            "neighbor_number": 6,
+            "neighbor_distance": 2
+        },
+        {
+            "id": "2142075",
+            "name": "M. H. J. Webb   ",
+            "group": 1,
+            "neighbor_number": 6,
+            "neighbor_distance": 2
+        },
+        {
+            "id": "2142074",
+            "name": "H. G. M. Pullen   ",
+            "group": 1,
+            "neighbor_number": 6,
+            "neighbor_distance": 2
+        },
+        {
+            "id": "1866712",
+            "name": "Amir A. Shah   ",
+            "group": 1,
+            "neighbor_number": 8,
+            "neighbor_distance": 2
+        },
+        {
+            "id": "2142071",
+            "name": "D. Marudhadevi   ",
+            "group": 1,
+            "neighbor_number": 6,
+            "neighbor_distance": 2
+        },
+        {
+            "id": "545381",
+            "name": "Medhat Mohamad   ",
+            "group": 1,
+            "neighbor_number": 15,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "117194",
+            "name": "Md. Saiful Islam   ",
+            "group": 1,
+            "neighbor_number": 20,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "1108503",
+            "name": "Ji Ho Kwak   ",
+            "group": 1,
+            "neighbor_number": 5,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "1066192",
+            "name": "Menaga D   ",
+            "group": 1,
+            "neighbor_number": 7,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "2068750",
+            "name": "Yul Ha   ",
+            "group": 1,
+            "neighbor_number": 27,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "1066193",
+            "name": "Stefan Reisinger   ",
+            "group": 1,
+            "neighbor_number": 5,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "213434",
+            "name": "Jung-Chul Gong   ",
+            "group": 1,
+            "neighbor_number": 5,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "2811112",
+            "name": "Kenfack Blanchard   ",
+            "group": 1,
+            "neighbor_number": 8,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "2617379",
+            "name": "Sergiy V. Filatov   ",
+            "group": 1,
+            "neighbor_number": 8,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "498011",
+            "name": "Adam Rogalewicz   ",
+            "group": 1,
+            "neighbor_number": 8,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "219660",
+            "name": "Shiyuan Jia   ",
+            "group": 1,
+            "neighbor_number": 8,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "718623",
+            "name": "Ali Mohajer Hejazi   ",
+            "group": 1,
+            "neighbor_number": 5,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "3158208",
+            "name": "Namrata Meharwal   ",
+            "group": 1,
+            "neighbor_number": 8,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "401460",
+            "name": "Dror Rubinstein   ",
+            "group": 1,
+            "neighbor_number": 14,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "959734",
+            "name": "Jian-Sheng Chen   ",
+            "group": 1,
+            "neighbor_number": 8,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "401461",
+            "name": "Rafael Castro   ",
+            "group": 1,
+            "neighbor_number": 6,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "1761990",
+            "name": "Claudio A. Bonilla   ",
+            "group": 1,
+            "neighbor_number": 8,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "1067166",
+            "name": "Xiangguang Wang   ",
+            "group": 1,
+            "neighbor_number": 6,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "401462",
+            "name": "Pranjal Vyas   ",
+            "group": 1,
+            "neighbor_number": 6,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "210441",
+            "name": "Pratibha Naganathan   ",
+            "group": 1,
+            "neighbor_number": 11,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "2977099",
+            "name": "Jared M. Davis   ",
+            "group": 1,
+            "neighbor_number": 11,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "2811385",
+            "name": "Erin Rusaw   ",
+            "group": 1,
+            "neighbor_number": 14,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "2595646",
+            "name": "Regina Antonio-Chavez   ",
+            "group": 1,
+            "neighbor_number": 16,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "238930",
+            "name": "Thammarat Panityakul   ",
+            "group": 1,
+            "neighbor_number": 13,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "95098",
+            "name": "Maryam Ahmadi   ",
+            "group": 1,
+            "neighbor_number": 12,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "268145",
+            "name": "Michael Neuh   ",
+            "group": 1,
+            "neighbor_number": 11,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "354617",
+            "name": "Jonghoek Kim   ",
+            "group": 1,
+            "neighbor_number": 7,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "9884",
+            "name": "Paolo Dario   ",
+            "group": 1,
+            "neighbor_number": 7,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "1068244",
+            "name": "Ingrid J. Pickering   ",
+            "group": 1,
+            "neighbor_number": 7,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "355933",
+            "name": "Andrew Spielberg   ",
+            "group": 1,
+            "neighbor_number": 7,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "1842202",
+            "name": "O. Schoen   ",
+            "group": 1,
+            "neighbor_number": 7,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "1022035",
+            "name": "Reyes Tatsuru Shiroku   ",
+            "group": 1,
+            "neighbor_number": 7,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "214304",
+            "name": "Vesna Spasic Jokic   ",
+            "group": 1,
+            "neighbor_number": 5,
+            "neighbor_distance": 4
+        },
+        {
+            "id": "2976820",
+            "name": "Felix S. Rantow   ",
+            "group": 1,
+            "neighbor_number": 8,
+            "neighbor_distance": 4
+        },
+        {
+            "id": "2112371",
+            "name": "Matthew Sisco   ",
+            "group": 1,
+            "neighbor_number": 13,
+            "neighbor_distance": 4
+        },
+        {
+            "id": "23915",
+            "name": "Kheng Lee Koay   ",
+            "group": 1,
+            "neighbor_number": 6,
+            "neighbor_distance": 4
+        },
+        {
+            "id": "1121626",
+            "name": "Francisco Melo   ",
+            "group": 1,
+            "neighbor_number": 9,
+            "neighbor_distance": 4
+        },
+        {
+            "id": "2248113",
+            "name": "Mary J. Lee   ",
+            "group": 1,
+            "neighbor_number": 5,
+            "neighbor_distance": 4
+        },
+        {
+            "id": "2068749",
+            "name": "Aras Alkis   ",
+            "group": 1,
+            "neighbor_number": 5,
+            "neighbor_distance": 4
+        },
+        {
+            "id": "208838",
+            "name": "Gerd Griepentrog   ",
+            "group": 1,
+            "neighbor_number": 5,
+            "neighbor_distance": 4
+        }
+    ],
+    "links": [
+        {
+            "source": "495623",
+            "target": "495624"
+        },
+        {
+            "source": "495623",
+            "target": "495625"
+        },
+        {
+            "source": "495624",
+            "target": "495625"
+        },
+        {
+            "source": "9928",
+            "target": "495623"
+        },
+        {
+            "source": "9928",
+            "target": "495624"
+        },
+        {
+            "source": "317470",
+            "target": "495623"
+        },
+        {
+            "source": "317470",
+            "target": "495624"
+        },
+        {
+            "source": "495618",
+            "target": "495623"
+        },
+        {
+            "source": "495618",
+            "target": "495624"
+        },
+        {
+            "source": "9928",
+            "target": "495625"
+        },
+        {
+            "source": "317470",
+            "target": "495625"
+        },
+        {
+            "source": "495618",
+            "target": "495625"
+        },
+        {
+            "source": "9928",
+            "target": "317470"
+        },
+        {
+            "source": "9928",
+            "target": "495618"
+        },
+        {
+            "source": "317470",
+            "target": "495618"
+        },
+        {
+            "source": "495625",
+            "target": "2606623"
+        },
+        {
+            "source": "9928",
+            "target": "2606623"
+        },
+        {
+            "source": "495625",
+            "target": "3146902"
+        },
+        {
+            "source": "9928",
+            "target": "3146902"
+        },
+        {
+            "source": "495625",
+            "target": "2759896"
+        },
+        {
+            "source": "9928",
+            "target": "2759896"
+        },
+        {
+            "source": "495625",
+            "target": "1842131"
+        },
+        {
+            "source": "9928",
+            "target": "1842131"
+        },
+        {
+            "source": "495625",
+            "target": "1025197"
+        },
+        {
+            "source": "9928",
+            "target": "1025197"
+        },
+        {
+            "source": "495625",
+            "target": "566761"
+        },
+        {
+            "source": "9928",
+            "target": "566761"
+        },
+        {
+            "source": "495625",
+            "target": "1022134"
+        },
+        {
+            "source": "9928",
+            "target": "1022134"
+        },
+        {
+            "source": "317470",
+            "target": "2606623"
+        },
+        {
+            "source": "317470",
+            "target": "3146902"
+        },
+        {
+            "source": "317470",
+            "target": "2759896"
+        },
+        {
+            "source": "317470",
+            "target": "1842131"
+        },
+        {
+            "source": "317470",
+            "target": "1025197"
+        },
+        {
+            "source": "317470",
+            "target": "566761"
+        },
+        {
+            "source": "317470",
+            "target": "1022134"
+        },
+        {
+            "source": "317470",
+            "target": "1866710"
+        },
+        {
+            "source": "9928",
+            "target": "1866710"
+        },
+        {
+            "source": "317470",
+            "target": "2142073"
+        },
+        {
+            "source": "9928",
+            "target": "2142073"
+        },
+        {
+            "source": "317470",
+            "target": "2142072"
+        },
+        {
+            "source": "9928",
+            "target": "2142072"
+        },
+        {
+            "source": "317470",
+            "target": "2142075"
+        },
+        {
+            "source": "9928",
+            "target": "2142075"
+        },
+        {
+            "source": "317470",
+            "target": "2142074"
+        },
+        {
+            "source": "9928",
+            "target": "2142074"
+        },
+        {
+            "source": "317470",
+            "target": "1866712"
+        },
+        {
+            "source": "9928",
+            "target": "1866712"
+        },
+        {
+            "source": "317470",
+            "target": "2142071"
+        },
+        {
+            "source": "9928",
+            "target": "2142071"
+        },
+        {
+            "source": "1022134",
+            "target": "2606623"
+        },
+        {
+            "source": "566761",
+            "target": "2606623"
+        },
+        {
+            "source": "2759896",
+            "target": "3146902"
+        },
+        {
+            "source": "1022134",
+            "target": "3146902"
+        },
+        {
+            "source": "1025197",
+            "target": "2759896"
+        },
+        {
+            "source": "1842131",
+            "target": "2759896"
+        },
+        {
+            "source": "1022134",
+            "target": "2759896"
+        },
+        {
+            "source": "1025197",
+            "target": "1842131"
+        },
+        {
+            "source": "1022134",
+            "target": "1842131"
+        },
+        {
+            "source": "1022134",
+            "target": "1025197"
+        },
+        {
+            "source": "566761",
+            "target": "1022134"
+        },
+        {
+            "source": "545381",
+            "target": "1022134"
+        },
+        {
+            "source": "9928",
+            "target": "545381"
+        },
+        {
+            "source": "117194",
+            "target": "1022134"
+        },
+        {
+            "source": "9928",
+            "target": "117194"
+        },
+        {
+            "source": "1022134",
+            "target": "1108503"
+        },
+        {
+            "source": "9928",
+            "target": "1108503"
+        },
+        {
+            "source": "1022134",
+            "target": "1066192"
+        },
+        {
+            "source": "9928",
+            "target": "1066192"
+        },
+        {
+            "source": "1866710",
+            "target": "2142071"
+        },
+        {
+            "source": "1866710",
+            "target": "1866712"
+        },
+        {
+            "source": "1866710",
+            "target": "2142075"
+        },
+        {
+            "source": "1866710",
+            "target": "2142072"
+        },
+        {
+            "source": "1866710",
+            "target": "2142073"
+        },
+        {
+            "source": "1866710",
+            "target": "2142074"
+        },
+        {
+            "source": "2142073",
+            "target": "2142074"
+        },
+        {
+            "source": "2142073",
+            "target": "2142075"
+        },
+        {
+            "source": "1866712",
+            "target": "2142073"
+        },
+        {
+            "source": "2142071",
+            "target": "2142073"
+        },
+        {
+            "source": "2142072",
+            "target": "2142073"
+        },
+        {
+            "source": "1866712",
+            "target": "2142072"
+        },
+        {
+            "source": "2142071",
+            "target": "2142072"
+        },
+        {
+            "source": "1866712",
+            "target": "2142075"
+        },
+        {
+            "source": "2142074",
+            "target": "2142075"
+        },
+        {
+            "source": "1866712",
+            "target": "2142074"
+        },
+        {
+            "source": "1866712",
+            "target": "2142071"
+        },
+        {
+            "source": "117194",
+            "target": "545381"
+        },
+        {
+            "source": "545381",
+            "target": "1108503"
+        },
+        {
+            "source": "545381",
+            "target": "1066192"
+        },
+        {
+            "source": "545381",
+            "target": "2068750"
+        },
+        {
+            "source": "9928",
+            "target": "2068750"
+        },
+        {
+            "source": "545381",
+            "target": "1066193"
+        },
+        {
+            "source": "9928",
+            "target": "1066193"
+        },
+        {
+            "source": "213434",
+            "target": "545381"
+        },
+        {
+            "source": "9928",
+            "target": "213434"
+        },
+        {
+            "source": "117194",
+            "target": "1108503"
+        },
+        {
+            "source": "117194",
+            "target": "1066192"
+        },
+        {
+            "source": "117194",
+            "target": "2811112"
+        },
+        {
+            "source": "9928",
+            "target": "2811112"
+        },
+        {
+            "source": "117194",
+            "target": "2617379"
+        },
+        {
+            "source": "9928",
+            "target": "2617379"
+        },
+        {
+            "source": "117194",
+            "target": "498011"
+        },
+        {
+            "source": "9928",
+            "target": "498011"
+        },
+        {
+            "source": "117194",
+            "target": "219660"
+        },
+        {
+            "source": "9928",
+            "target": "219660"
+        },
+        {
+            "source": "117194",
+            "target": "718623"
+        },
+        {
+            "source": "9928",
+            "target": "718623"
+        },
+        {
+            "source": "117194",
+            "target": "213434"
+        },
+        {
+            "source": "117194",
+            "target": "3158208"
+        },
+        {
+            "source": "9928",
+            "target": "3158208"
+        },
+        {
+            "source": "117194",
+            "target": "401460"
+        },
+        {
+            "source": "9928",
+            "target": "401460"
+        },
+        {
+            "source": "117194",
+            "target": "2068750"
+        },
+        {
+            "source": "117194",
+            "target": "959734"
+        },
+        {
+            "source": "9928",
+            "target": "959734"
+        },
+        {
+            "source": "117194",
+            "target": "401461"
+        },
+        {
+            "source": "9928",
+            "target": "401461"
+        },
+        {
+            "source": "117194",
+            "target": "1761990"
+        },
+        {
+            "source": "9928",
+            "target": "1761990"
+        },
+        {
+            "source": "117194",
+            "target": "1066193"
+        },
+        {
+            "source": "117194",
+            "target": "1067166"
+        },
+        {
+            "source": "9928",
+            "target": "1067166"
+        },
+        {
+            "source": "117194",
+            "target": "401462"
+        },
+        {
+            "source": "9928",
+            "target": "401462"
+        },
+        {
+            "source": "1066192",
+            "target": "1108503"
+        },
+        {
+            "source": "1066192",
+            "target": "1066193"
+        },
+        {
+            "source": "213434",
+            "target": "1066192"
+        },
+        {
+            "source": "210441",
+            "target": "545381"
+        },
+        {
+            "source": "210441",
+            "target": "2068750"
+        },
+        {
+            "source": "545381",
+            "target": "2977099"
+        },
+        {
+            "source": "2068750",
+            "target": "2977099"
+        },
+        {
+            "source": "545381",
+            "target": "2811385"
+        },
+        {
+            "source": "2068750",
+            "target": "2811385"
+        },
+        {
+            "source": "545381",
+            "target": "2595646"
+        },
+        {
+            "source": "2068750",
+            "target": "2595646"
+        },
+        {
+            "source": "238930",
+            "target": "545381"
+        },
+        {
+            "source": "238930",
+            "target": "2068750"
+        },
+        {
+            "source": "95098",
+            "target": "545381"
+        },
+        {
+            "source": "95098",
+            "target": "2068750"
+        },
+        {
+            "source": "268145",
+            "target": "545381"
+        },
+        {
+            "source": "268145",
+            "target": "2068750"
+        },
+        {
+            "source": "401461",
+            "target": "2068750"
+        },
+        {
+            "source": "401460",
+            "target": "2068750"
+        },
+        {
+            "source": "2068750",
+            "target": "3158208"
+        },
+        {
+            "source": "219660",
+            "target": "2068750"
+        },
+        {
+            "source": "1761990",
+            "target": "2068750"
+        },
+        {
+            "source": "959734",
+            "target": "2068750"
+        },
+        {
+            "source": "498011",
+            "target": "2068750"
+        },
+        {
+            "source": "2068750",
+            "target": "2811112"
+        },
+        {
+            "source": "2068750",
+            "target": "2617379"
+        },
+        {
+            "source": "213434",
+            "target": "1066193"
+        },
+        {
+            "source": "498011",
+            "target": "2811112"
+        },
+        {
+            "source": "2811112",
+            "target": "3158208"
+        },
+        {
+            "source": "2617379",
+            "target": "2811112"
+        },
+        {
+            "source": "1761990",
+            "target": "2811112"
+        },
+        {
+            "source": "959734",
+            "target": "2811112"
+        },
+        {
+            "source": "959734",
+            "target": "2617379"
+        },
+        {
+            "source": "2617379",
+            "target": "3158208"
+        },
+        {
+            "source": "1761990",
+            "target": "2617379"
+        },
+        {
+            "source": "498011",
+            "target": "2617379"
+        },
+        {
+            "source": "498011",
+            "target": "1761990"
+        },
+        {
+            "source": "498011",
+            "target": "959734"
+        },
+        {
+            "source": "498011",
+            "target": "3158208"
+        },
+        {
+            "source": "219660",
+            "target": "718623"
+        },
+        {
+            "source": "219660",
+            "target": "1067166"
+        },
+        {
+            "source": "219660",
+            "target": "401460"
+        },
+        {
+            "source": "219660",
+            "target": "401461"
+        },
+        {
+            "source": "219660",
+            "target": "401462"
+        },
+        {
+            "source": "718623",
+            "target": "1067166"
+        },
+        {
+            "source": "401460",
+            "target": "718623"
+        },
+        {
+            "source": "1761990",
+            "target": "3158208"
+        },
+        {
+            "source": "959734",
+            "target": "3158208"
+        },
+        {
+            "source": "401460",
+            "target": "401462"
+        },
+        {
+            "source": "401460",
+            "target": "401461"
+        },
+        {
+            "source": "401460",
+            "target": "1067166"
+        },
+        {
+            "source": "354617",
+            "target": "401460"
+        },
+        {
+            "source": "9928",
+            "target": "354617"
+        },
+        {
+            "source": "9884",
+            "target": "401460"
+        },
+        {
+            "source": "9884",
+            "target": "9928"
+        },
+        {
+            "source": "401460",
+            "target": "1068244"
+        },
+        {
+            "source": "9928",
+            "target": "1068244"
+        },
+        {
+            "source": "355933",
+            "target": "401460"
+        },
+        {
+            "source": "9928",
+            "target": "355933"
+        },
+        {
+            "source": "401460",
+            "target": "1842202"
+        },
+        {
+            "source": "9928",
+            "target": "1842202"
+        },
+        {
+            "source": "401460",
+            "target": "1022035"
+        },
+        {
+            "source": "9928",
+            "target": "1022035"
+        },
+        {
+            "source": "959734",
+            "target": "1761990"
+        },
+        {
+            "source": "401461",
+            "target": "401462"
+        },
+        {
+            "source": "401462",
+            "target": "1067166"
+        },
+        {
+            "source": "210441",
+            "target": "2595646"
+        },
+        {
+            "source": "210441",
+            "target": "268145"
+        },
+        {
+            "source": "210441",
+            "target": "2811385"
+        },
+        {
+            "source": "95098",
+            "target": "210441"
+        },
+        {
+            "source": "210441",
+            "target": "238930"
+        },
+        {
+            "source": "210441",
+            "target": "2977099"
+        },
+        {
+            "source": "210441",
+            "target": "214304"
+        },
+        {
+            "source": "214304",
+            "target": "2068750"
+        },
+        {
+            "source": "210441",
+            "target": "2976820"
+        },
+        {
+            "source": "2068750",
+            "target": "2976820"
+        },
+        {
+            "source": "210441",
+            "target": "2112371"
+        },
+        {
+            "source": "2068750",
+            "target": "2112371"
+        },
+        {
+            "source": "2595646",
+            "target": "2977099"
+        },
+        {
+            "source": "2811385",
+            "target": "2977099"
+        },
+        {
+            "source": "268145",
+            "target": "2977099"
+        },
+        {
+            "source": "238930",
+            "target": "2977099"
+        },
+        {
+            "source": "95098",
+            "target": "2977099"
+        },
+        {
+            "source": "2112371",
+            "target": "2977099"
+        },
+        {
+            "source": "2976820",
+            "target": "2977099"
+        },
+        {
+            "source": "23915",
+            "target": "2977099"
+        },
+        {
+            "source": "23915",
+            "target": "2068750"
+        },
+        {
+            "source": "2595646",
+            "target": "2811385"
+        },
+        {
+            "source": "268145",
+            "target": "2811385"
+        },
+        {
+            "source": "95098",
+            "target": "2811385"
+        },
+        {
+            "source": "238930",
+            "target": "2811385"
+        },
+        {
+            "source": "2112371",
+            "target": "2811385"
+        },
+        {
+            "source": "23915",
+            "target": "2811385"
+        },
+        {
+            "source": "2811385",
+            "target": "2976820"
+        },
+        {
+            "source": "1121626",
+            "target": "2811385"
+        },
+        {
+            "source": "1121626",
+            "target": "2068750"
+        },
+        {
+            "source": "2248113",
+            "target": "2811385"
+        },
+        {
+            "source": "2068750",
+            "target": "2248113"
+        },
+        {
+            "source": "214304",
+            "target": "2811385"
+        },
+        {
+            "source": "268145",
+            "target": "2595646"
+        },
+        {
+            "source": "95098",
+            "target": "2595646"
+        },
+        {
+            "source": "238930",
+            "target": "2595646"
+        },
+        {
+            "source": "2248113",
+            "target": "2595646"
+        },
+        {
+            "source": "2595646",
+            "target": "2976820"
+        },
+        {
+            "source": "23915",
+            "target": "2595646"
+        },
+        {
+            "source": "1121626",
+            "target": "2595646"
+        },
+        {
+            "source": "214304",
+            "target": "2595646"
+        },
+        {
+            "source": "2068749",
+            "target": "2595646"
+        },
+        {
+            "source": "2068749",
+            "target": "2068750"
+        },
+        {
+            "source": "208838",
+            "target": "2595646"
+        },
+        {
+            "source": "208838",
+            "target": "2068750"
+        },
+        {
+            "source": "2112371",
+            "target": "2595646"
+        },
+        {
+            "source": "238930",
+            "target": "268145"
+        },
+        {
+            "source": "95098",
+            "target": "238930"
+        },
+        {
+            "source": "23915",
+            "target": "238930"
+        },
+        {
+            "source": "238930",
+            "target": "2248113"
+        },
+        {
+            "source": "238930",
+            "target": "2112371"
+        },
+        {
+            "source": "238930",
+            "target": "2976820"
+        },
+        {
+            "source": "238930",
+            "target": "1121626"
+        },
+        {
+            "source": "95098",
+            "target": "268145"
+        },
+        {
+            "source": "95098",
+            "target": "1121626"
+        },
+        {
+            "source": "95098",
+            "target": "2248113"
+        },
+        {
+            "source": "95098",
+            "target": "2112371"
+        },
+        {
+            "source": "95098",
+            "target": "2976820"
+        },
+        {
+            "source": "268145",
+            "target": "1121626"
+        },
+        {
+            "source": "268145",
+            "target": "2112371"
+        },
+        {
+            "source": "268145",
+            "target": "2976820"
+        },
+        {
+            "source": "9884",
+            "target": "354617"
+        },
+        {
+            "source": "354617",
+            "target": "1068244"
+        },
+        {
+            "source": "354617",
+            "target": "355933"
+        },
+        {
+            "source": "354617",
+            "target": "1842202"
+        },
+        {
+            "source": "354617",
+            "target": "1022035"
+        },
+        {
+            "source": "9884",
+            "target": "1068244"
+        },
+        {
+            "source": "9884",
+            "target": "355933"
+        },
+        {
+            "source": "9884",
+            "target": "1842202"
+        },
+        {
+            "source": "9884",
+            "target": "1022035"
+        },
+        {
+            "source": "355933",
+            "target": "1068244"
+        },
+        {
+            "source": "1068244",
+            "target": "1842202"
+        },
+        {
+            "source": "1022035",
+            "target": "1068244"
+        },
+        {
+            "source": "355933",
+            "target": "1842202"
+        },
+        {
+            "source": "355933",
+            "target": "1022035"
+        },
+        {
+            "source": "1022035",
+            "target": "1842202"
+        },
+        {
+            "source": "214304",
+            "target": "2112371"
+        },
+        {
+            "source": "208838",
+            "target": "2112371"
+        },
+        {
+            "source": "23915",
+            "target": "2112371"
+        },
+        {
+            "source": "2068749",
+            "target": "2112371"
+        },
+        {
+            "source": "1121626",
+            "target": "2112371"
+        },
+        {
+            "source": "1121626",
+            "target": "2068749"
+        },
+        {
+            "source": "208838",
+            "target": "1121626"
+        },
+        {
+            "source": "208838",
+            "target": "2068749"
+        }
+    ]
+}

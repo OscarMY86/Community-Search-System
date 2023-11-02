@@ -8,5 +8,6 @@ services:
       - ./search.txt:/app/search.txt
       - ./name2id.txt:/app/name2id.txt
       - ./converter.py:/app/converter.py
+      - ./testset:/app/testset
     ports:
       - 5000:5000
