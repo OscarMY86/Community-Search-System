@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ForceDirectedGraph from './ForceDirectedGraph.js';
-
+import info from "../data/result.json"
+import { Table } from './Table.jsx';
 
 export const Services = (props) => {
     const [name, setName] = useState('');
@@ -8,7 +9,10 @@ export const Services = (props) => {
     const [selectedOption, setSelectedOption] = useState('');
     const [graphData, setGraphData] = useState("");
     const [error, setError] = useState(null);
-
+    const [landingTableData, setLandingTableData] = useState({});
+    useEffect(() => {
+        setLandingTableData(info);
+    }, []);
     const handleNameChange = (event) => {
         setName(event.target.value);
     };
@@ -28,7 +32,7 @@ export const Services = (props) => {
         event.preventDefault();
         setError(null);
         setGraphData(null);
-
+        setSelectedOption()
         // Construct the query string
         const queryString = `name=${encodeURIComponent(name)}&k=${encodeURIComponent(k)}&option=${encodeURIComponent(selectedOption)}`;
 
@@ -69,45 +73,63 @@ export const Services = (props) => {
                       Please enter the search name and k value to search:
           </p>
         </div>
-              <div className="row">   
-                  <table>
+              <div className="row"> 
+                  <table className="tablecontainer1">
                       <tr>
-                  <th width = '300'>
-                  <div className="input-container">
-                      <label>Search name:</label>
-                      
-                  </div>
-                  <div className="input-box">
-                      <input className= "input-text" type="text" value={name} onChange={handleNameChange} placeholder="Input search name" />
-                  </div>
-                  <div className="input-container">
-                      <label>K-value:</label>
-                      
-                  </div>
-                  <div className="input-box">
-                                  <input className="input-text" type="integer" value={k} onChange={handlekChange} placeholder="Input integer" />
-                  
+                          <th>
+                              <div className="input-container">
+                                  <label>Search name:</label>
+
                               </div>
                               <div className="input-box">
+                                  <input className="input-text" type="text" value={name} onChange={handleNameChange} placeholder="Input search name" />
+                              </div>
+                              </th>
+                              <th>
+                              <div className="input-container">
+                                  <label>K-value:</label>
+
+                              </div>
+                              <div className="input-box">
+                                  <input className="input-text" type="integer" value={k} onChange={handlekChange} placeholder="Input integer" />
+
+                                  </div>
+                          </th>
+                          <th>
+                              <div className="input-box">
                                   <select value={selectedOption} onChange={handleOptionChange}>
-                                      <option value="">Please select Method</option>
                                       <option value="core">Core (available)</option>
                                       <option value="truss">Truss (available)</option>
                                       <option value="clique">Clique (unavailable)</option>
                                       <option value="ecc">Ecc (unavailable)</option>
                                   </select>
                               </div>
-                  <div className = "input-button">
-                      <button className= "button1" onClick={(event) => handleSubmit(event)}>Submit</button>
-                                    
+                          </th>
+                          <th>
+                              <div className="input-button">
+                                  <button className="button1" onClick={(event) => handleSubmit(event)}>Submit</button>
+
                                   <button className="button2" type='button' onClick={handleReset}>Reset</button>
                               </div>
                           </th>
+                      </tr>
+                      <tr>
+                              <th>
+                              
+                          </th>
+                          
+                          </tr>
+                  </table>
+                  <table className="tablecontainer">
+                      <tr>                 
                           <th width='1000px'>
                           <div className="graph">
-                  {{ graphData } !== null ? <ForceDirectedGraph graphData={graphData} /> : null}
+                                  {{ graphData } !== null ? <ForceDirectedGraph graphData={graphData} /> : null}
                                   {error && <div className="error">{error}</div>}
                               </div>
+                          </th>
+                          <th>
+                              <Table data={landingTableData.nodes} />
                           </th>
                       </tr>
                   </table>

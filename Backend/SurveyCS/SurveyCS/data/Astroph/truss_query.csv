@@ -1,2 +1,20 @@
 node id,query k,community number,running time(ms)
 495623,6,1,5337.73
+node id,query k,community number,running time(ms)
+495623,6,1,4230.15
+node id,query k,community number,running time(ms)
+495623,6,1,4278.92
+node id,query k,community number,running time(ms)
+495623,6,1,4375.81
+node id,query k,community number,running time(ms)
+495623,6,1,4227.01
+node id,query k,community number,running time(ms)
+495623,8,0,4496.47
+node id,query k,community number,running time(ms)
+495623,7,0,4356.22
+node id,query k,community number,running time(ms)
+495623,6,1,4337.71
+node id,query k,community number,running time(ms)
+495623,7,0,4297.89
+node id,query k,community number,running time(ms)
+495623,7,0,4479.74

@@ -7,23 +7,6 @@
     "paragraph": "We are the students from the Chinese University of Hong kong and studying computer engineering and computer science. The website provide the community search function for academic use."
   },
 
-  "Team": [
-    {
-      "img": "img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
-    },
-    {
-      "img": "img/team/02.jpg",
-      "name": "Ming Yip",
-      "job": "Computer Engineer"
-    },
-    {
-      "img": "img/team/03.jpg",
-      "name": "Oscar",
-      "job": "Programmer"
-    }
-  ],
   "Contact": {
     "address": "The Chinese University of Hong Kong, Shatin, NT, Hong Kong SAR, The People's Republic of China",
     "phone": "(852) 3943 7000 / (852) 3943 6000",

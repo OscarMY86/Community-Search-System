@@ -48,7 +48,7 @@ const ForceDirectedGraph = ({ graphData }) =>{
             .attr("fill", d => color(d.group));
             
             node.append("title")
-            .text(d => d.id);
+            .text(function (d) { return d => d.id + "\n", d => d.name });
             
             // Add a drag behavior.
             node.call(d3.drag()

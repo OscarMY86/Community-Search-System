@@ -1,24 +1,74 @@
 body,
-#services .error {
+ .error {
     color: #777;
     text-align: center;
 }
+.table_style{
+    padding:15px;
+}
+.card-list-table {
+    color: #777;
+}
+.table_head{
+    border-color:black;
+    text-align:center;
+    margin-bottom: 10px;
+}
+.table_body {
+    text-align: center;
+}
+.wrapper {
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 500px;
+    margin: 10px;
+    max-height: 500px;
+    overflow-y: scroll;
+    position: relative;
+    transition: all .2s ease-out;
+}
 .input-container {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     margin-left: 50px;
     color: aliceblue;
 }
-#services .input-text {
+.tablecontainer{
+    margin-right:100px;
+    margin-left:-150px;
+}
+.input-container2 {
+    margin-bottom: 20px;
+    margin-left: 50px;
     color: #777;
 }
-#services .input-button{
+
+.input-text {
+    color: #777;
+}
+.input-button{
     margin-left: 30px;
 }
-#services .graph {
+.tablecontainer1{
+    margin-left:100px;
+}
+.graph {
     background-color: white;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-right: 50px;
+    margin-top: 20px;
+    width: 1000px;
+    height: 700px;
 }
-#services .button1 {
+.graph1 {
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 700px;
+    height: 400px;
+}
+.button1 {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -30,8 +80,9 @@ body,
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 30px;
+    margin-top: 20px;
 }
-#services .button2 {
+.button2 {
     background-color: red; /* Green */
     border: none;
     color: white;
@@ -44,9 +95,10 @@ body,
     cursor: pointer;
     border-radius: 30px;
     margin-left: 5px;
+    margin-top: 20px;
 }
 .input-box {
-    margin-bottom: 20px;
+    margin-top: 20px;
     margin-left: 50px;
     width: 170px;
 }
@@ -514,7 +566,7 @@ header .intro-text {
 }
 /* Team Section */
 #team {
-  padding: 100px 0;
+  padding: 10px 0;
 }
 #team h4 {
   margin: 5px 0;

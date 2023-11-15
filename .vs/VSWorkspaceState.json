@@ -2,16 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\Backend",
+    "\\Backend\\__pycache__",
     "\\comm-app",
-    "\\comm-app\\public",
-    "\\comm-app\\public\\fonts",
-    "\\comm-app\\public\\fonts\\font-awesome",
-    "\\comm-app\\public\\fonts\\font-awesome\\fonts",
-    "\\comm-app\\public\\fonts\\fonts",
     "\\comm-app\\src",
     "\\comm-app\\src\\components",
     "\\comm-app\\src\\data"
   ],
-  "SelectedNode": "\\comm-app\\src\\components\\services.jsx",
   "PreviewInSolutionExplorer": false
 }
