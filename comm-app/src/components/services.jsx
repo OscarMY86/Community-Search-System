@@ -98,10 +98,10 @@ export const Services = (props) => {
                           <th>
                               <div className="input-box">
                                   <select value={selectedOption} onChange={handleOptionChange}>
-                                      <option value="core">Core (available)</option>
-                                      <option value="truss">Truss (available)</option>
-                                      <option value="clique">Clique (unavailable)</option>
-                                      <option value="ecc">Ecc (unavailable)</option>
+                                      <option value="core">Core</option>
+                                      <option value="truss">Truss</option>
+                                      {/* <option value="clique">Clique (unavailable)</option> */}
+                                      {/* <option value="ecc">Ecc (unavailable)</option> */}
                                   </select>
                               </div>
                           </th>

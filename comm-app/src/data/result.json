@@ -699,6 +699,41 @@
             "group": 1,
             "neighbor_number": 8,
             "neighbor_distance": 3
+        },
+        {
+            "id": "75681",
+            "name": "Jonas Buchli   ",
+            "group": 1,
+            "neighbor_number": 8,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "75745",
+            "name": "Yusuke Matsumoto   ",
+            "group": 1,
+            "neighbor_number": 6,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "75795",
+            "name": "Jian Bi   ",
+            "group": 1,
+            "neighbor_number": 10,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "75216",
+            "name": "Paulo Leica   ",
+            "group": 1,
+            "neighbor_number": 12,
+            "neighbor_distance": 3
+        },
+        {
+            "id": "75588",
+            "name": "Brahim Metoui   ",
+            "group": 1,
+            "neighbor_number": 9,
+            "neighbor_distance": 3
         }
     ],
     "links": [
@@ -1232,6 +1267,26 @@
         },
         {
             "source": "794",
+            "target": "75681"
+        },
+        {
+            "source": "794",
+            "target": "75745"
+        },
+        {
+            "source": "794",
+            "target": "75795"
+        },
+        {
+            "source": "794",
+            "target": "75216"
+        },
+        {
+            "source": "794",
+            "target": "75588"
+        },
+        {
+            "source": "794",
             "target": "354190"
         },
         {
@@ -1597,6 +1652,10 @@
         {
             "source": "70925",
             "target": "74704"
+        },
+        {
+            "source": "71602",
+            "target": "75681"
         },
         {
             "source": "74704",
