@@ -20,7 +20,7 @@ body,
 .wrapper {
     background-color: white;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    width: 500px;
+    width: 100%;
     margin: 10px;
     max-height: 500px;
     overflow-y: scroll;
@@ -34,7 +34,7 @@ body,
 }
 .tablecontainer{
     margin-right:100px;
-    margin-left:-150px;
+    margin-left:-200px;
 }
 .input-container2 {
     margin-bottom: 20px;

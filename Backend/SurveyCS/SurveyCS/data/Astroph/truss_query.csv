@@ -78,3 +78,13 @@ node id,query k,community number,running time(ms)
 114,9,6,5281.15
 node id,query k,community number,running time(ms)
 495623,6,1,5417.7
+node id,query k,community number,running time(ms)
+114,8,5,5410.84
+node id,query k,community number,running time(ms)
+114,8,5,6324.27
+node id,query k,community number,running time(ms)
+495623,6,1,4977.27
+node id,query k,community number,running time(ms)
+495623,6,1,5462.12
+node id,query k,community number,running time(ms)
+114,7,7,5936.38
