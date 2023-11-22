@@ -3,7 +3,8 @@ import ForceDirectedGraph from './ForceDirectedGraph.js';
 
 export const Team = (props) => {
     const [name, setName] = useState('');
-    const [k, setk] = useState('');
+    const [k1, setk1] = useState('');
+    const [k2, setk2] = useState('');
     const [graphData1, setGraphData1] = useState("");
     const [graphData2, setGraphData2] = useState("");
     const [error, setError] = useState(null);
@@ -12,14 +13,19 @@ export const Team = (props) => {
         setName(event.target.value);
     };
 
-    const handlekChange = (event) => {
+    const handlek1Change = (event) => {
         const value = event.target.value;
         if (/^\d*$/.test(value)) {
-            setk(value);
+            setk1(value);
         }
     };
 
-
+    const handlek2Change = (event) => {
+        const value = event.target.value;
+        if (/^\d*$/.test(value)) {
+            setk2(value);
+        }
+    };
     const handleSubmit = (event) => {
        
         event.preventDefault();
@@ -28,8 +34,8 @@ export const Team = (props) => {
         setGraphData2(null);
 
         // Construct the query string
-        const queryString1 = `name=${encodeURIComponent(name)}&k=${encodeURIComponent(k)}&option=${encodeURIComponent('core')}`;
-        const queryString2 = `name=${encodeURIComponent(name)}&k=${encodeURIComponent(k)}&option=${encodeURIComponent('truss')}`;
+        const queryString1 = `name=${encodeURIComponent(name)}&k=${encodeURIComponent(k1)}&option=${encodeURIComponent('core')}`;
+        const queryString2 = `name=${encodeURIComponent(name)}&k=${encodeURIComponent(k2)}&option=${encodeURIComponent('truss')}`;
         // Make the GET request to the Flask backend
         fetch(`http://localhost:5000/search?${queryString1}`) // Search API
             // fetch(`http://localhost:5000/test?${queryString}`) // Test API
@@ -71,7 +77,8 @@ export const Team = (props) => {
 
     const handleReset = () => {
         setName('');
-        setk('');
+        setk1('');
+        setk2('');
         setGraphData1('');
         setGraphData2('');
         setError(null);
@@ -99,11 +106,21 @@ export const Team = (props) => {
                           </th>
                           <th>
                               <div className="input-container2">
-                                  <label>K-value:</label>
+                                  <label>K-core value:</label>
 
                               </div>
                               <div className="input-box">
-                                  <input className="input-text" type="integer" value={k} onChange={handlekChange} placeholder="Input integer" />
+                                  <input className="input-text" type="integer" value={k1} onChange={handlek1Change} placeholder="Input integer" />
+
+                              </div>
+                          </th>
+                          <th>
+                              <div className="input-container2">
+                                  <label>K-truss value:</label>
+
+                              </div>
+                              <div className="input-box">
+                                  <input className="input-text" type="integer" value={k2} onChange={handlek2Change} placeholder="Input integer" />
 
                               </div>
                           </th>
@@ -125,6 +142,10 @@ export const Team = (props) => {
                   <table className= "tablecontainer">
                       <tr>
                           <th>
+                              <div className="input-container3">
+                                  <label>k core</label>
+
+                              </div>
                               <div className="graph1">
                                   {{ graphData1 } !== null ? <ForceDirectedGraph graphData={graphData1} /> : null}
                                   {error && <div className="error">{error}</div>}
@@ -134,6 +155,10 @@ export const Team = (props) => {
                           </th>
 
                           <th>
+                              <div className="input-container3">
+                                  <label>k truss</label>
+
+                              </div>
                               <div className="graph1">
                                   {{ graphData2 } !== null ? <ForceDirectedGraph graphData={graphData2} /> : null}
                                   {error && <div className="error">{error}</div>}

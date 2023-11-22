@@ -2050,6 +2050,9 @@ pre code {
   .col-md-push-0 {
     left: auto;
   }
+  .col-md-offset-13 {
+     margin-left: 5%;
+  }
   .col-md-offset-12 {
     margin-left: 100%;
   }

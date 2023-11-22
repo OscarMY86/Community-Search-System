@@ -9,7 +9,7 @@ const ForceDirectedGraph = ({ graphData }) =>{
     const svgRef = useRef(null);
     useEffect(() => {
       if (graphData){
-        const width = 928;
+        const width = 1000;
         const height = 600;
         const color = d3.scaleOrdinal(d3.schemeCategory10);
         
@@ -27,7 +27,7 @@ const ForceDirectedGraph = ({ graphData }) =>{
         .attr("width", width)
         .attr("height", height)
         .attr("viewBox", [0, 0, width, height])
-        .attr("style", "max-width: 100%; height: auto;");
+        .attr("style", "max-width: 100%; height: 100%;");
         
         const link = svg.append("g")
         .attr("stroke", "#999")

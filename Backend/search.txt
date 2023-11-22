@@ -1,4 +1,4 @@
-Id: 114
-Name: J
-k-value: 7
-Method: truss
+Id: 495623
+Name: Oscar
+k-value: 6
+Method: 

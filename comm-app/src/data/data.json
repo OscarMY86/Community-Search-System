@@ -1,10 +1,10 @@
 {
   "Header": {
-    "title": "This is our Final Year Project",
+    "title": "Community Search Visualization System",
     "paragraph": "In this website, we are going to present our community searching to the users."
   },
   "About": {
-    "paragraph": "We are the students from the Chinese University of Hong kong and studying computer engineering and computer science. The website provide the community search function for academic use."
+    "paragraph": "We are the students from the Chinese University of Hong kong and studying computer engineering and computer science. The website provide the community search function for academic use. We want to compare the efficiency of using different algorithms in representing the community search. "
   },
 
   "Contact": {
@@ -34,7 +34,7 @@
     {
       "icon": "fa fa-magic",
       "title": "K-ecc",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "text": "k-edge-connected is a connected graph if it remains connected whenever fewer than k edges are removed."
     }
   ]
 }

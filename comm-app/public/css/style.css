@@ -1,5 +1,5 @@
 body,
- .error {
+.error {
     color: #777;
     text-align: center;
 }
@@ -8,6 +8,11 @@ body,
 }
 .card-list-table {
     color: #777;
+}
+video{
+    width:100%;
+    height:100vh;
+    object-fit:fill;
 }
 .table_head{
     border-color:black;
@@ -41,15 +46,21 @@ body,
     margin-left: 50px;
     color: #777;
 }
-
+.input-container3 {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #777;
+}
 .input-text {
     color: #777;
 }
 .input-button{
     margin-left: 30px;
 }
-.tablecontainer1{
-    margin-left:100px;
+.tablecontainer1 {
+    margin-left: 100px;
+    margin-bottom: 50px;
 }
 .graph {
     background-color: white;
@@ -332,25 +343,21 @@ a:focus,
 .intro {
   display: table;
   width: 100%;
-  padding: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
-  background-color: #e5e5e5;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
 }
-.intro .overlay {
-  background: rgba(0, 0, 0, 0.2);
+.headercontainer {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
 }
 .intro h1 {
-  font-family: "Raleway", sans-serif;
-  color: #fff;
-  font-size: 82px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 10px;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-size: 82px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 .intro h1 span {
   font-weight: 800;
@@ -372,6 +379,7 @@ header .intro-text {
 /* Features Section */
 #features {
   background: #f6f6f6;
+  padding:100px 0;
 }
 #features i.fa {
   font-size: 38px;
@@ -566,7 +574,7 @@ header .intro-text {
 }
 /* Team Section */
 #team {
-  padding: 10px 0;
+  padding: 100px 0;
 }
 #team h4 {
   margin: 5px 0;
