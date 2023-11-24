@@ -1,4 +1,4 @@
-Id: 495623
-Name: Oscar
+Id: 14864
+Name: Irwin King
 k-value: 6
-Method: 
+Method: truss

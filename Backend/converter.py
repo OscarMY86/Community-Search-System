@@ -13,15 +13,17 @@ def load_names(file_path):
     return id_to_name
 
 def bfs(source, edges):
-    neighbor_distance = {source: 0}
-    queue = deque([source])
-    while queue:
-        node = queue.popleft()
-        for neighbor in edges[node]:
-            if neighbor not in neighbor_distance:
-                neighbor_distance[neighbor] = neighbor_distance[node] + 1
-                queue.append(neighbor)
-    return neighbor_distance
+   neighbor_distance = {node: float('inf') for node in edges}
+   neighbor_distance[source] = 0
+   queue = deque([source])
+   while queue:
+       node = queue.popleft()
+       for neighbor in edges[node]:
+           if neighbor_distance[node] + 1 < neighbor_distance[neighbor]:
+               neighbor_distance[neighbor] = neighbor_distance[node] + 1
+               queue.append(neighbor)
+   return neighbor_distance
+
 
 def convert_to_json(txt_file_path, name_file_path):
     id_to_name = load_names(name_file_path)
@@ -49,12 +51,12 @@ def convert_to_json(txt_file_path, name_file_path):
                         name = id_to_name.get(node1, 'Unknown')
                         neighbor_distance = bfs(main_node, edges).get(node1, 0)
                         neighbor_number = len(edges[node1])
-                        nodes[node1] = {'name': name, 'group': community, 'neighbor_number': neighbor_number, 'neighbor_distance': neighbor_distance}
+                        nodes[node1] = {'name': name, 'group': 0 if node1 == main_node else community, 'neighbor_number': neighbor_number, 'neighbor_distance': neighbor_distance}
                     if node2 not in nodes and community_size < 100:
                         name = id_to_name.get(node2, 'Unknown')
                         neighbor_distance = bfs(main_node, edges).get(node2, 0)
                         neighbor_number = len(edges[node2])
-                        nodes[node2] = {'name': name, 'group': community, 'neighbor_number': neighbor_number, 'neighbor_distance': neighbor_distance}
+                        nodes[node2] = {'name': name, 'group': 0 if node2 == main_node else community, 'neighbor_number': neighbor_number, 'neighbor_distance': neighbor_distance}
                         community_size += 1
             else: 
                 community += 1
@@ -62,6 +64,7 @@ def convert_to_json(txt_file_path, name_file_path):
 
     for node in nodes:
         nodes[node]['neighbor_number'] = len(edges[node])
+        nodes[node]['neighbor_distance'] = bfs(main_node, edges)[node] # added
 
     # Filter out the links that are not between the nodes in the final node list
     for link in temp_links:
