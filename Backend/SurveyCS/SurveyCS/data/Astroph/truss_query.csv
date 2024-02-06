@@ -139,3 +139,27 @@ node id,query k,community number,running time(ms)
 550661,8,1,4987.68
 node id,query k,community number,running time(ms)
 14864,6,1,4844.76
+node id,query k,community number,running time(ms)
+14864,7,0,13664.4
+node id,query k,community number,running time(ms)
+14864,5,1,18172.6
+node id,query k,community number,running time(ms)
+550661,6,1,14960.8
+node id,query k,community number,running time(ms)
+550661,6,1,13276.3
+node id,query k,community number,running time(ms)
+14864,6,1,14583.4
+node id,query k,community number,running time(ms)
+14864,6,1,12898.7
+node id,query k,community number,running time(ms)
+14864,4,2,20711.8
+node id,query k,community number,running time(ms)
+14865,5,2,19909.5
+node id,query k,community number,running time(ms)
+14864,6,1,7581.9
+node id,query k,community number,running time(ms)
+14864,6,1,6466.54
+node id,query k,community number,running time(ms)
+14864,4,2,9401.57
+node id,query k,community number,running time(ms)
+114,8,5,7370.25
