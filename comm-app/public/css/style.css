@@ -30,8 +30,38 @@ body,
         height: 100%;
         object-fit: cover;
 }
+.button1 {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.button2 {
+    background-color: #FF3F3F; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
 .button3 {
-    background-color: darkred;
+    background-color: #CD3C3C;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -46,7 +76,7 @@ body,
     margin-top: 20px;
 }
 .button4 {
-    background-color: darkgreen;
+    background-color: #40CDA2;
     border: none;
     color: white;
     padding: 15px 22px;
@@ -60,6 +90,72 @@ body,
     margin-left: 5px;
     margin-top: 20px;
 }
+.button5 {
+    background-color: #50F972;
+    border: none;
+    color: white;
+    padding: 15px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.button1:hover {
+    background-color: #58CD5C;
+}
+
+.button1:active {
+    animation: buttonPress 0.1s linear;
+}
+.button2:hover {
+    background-color: #FF5B5B;
+}
+.button2:active {
+    animation: buttonPress 0.1s linear;
+}
+.button3:hover {
+    background-color: #CD5353;
+}
+
+.button3:active {
+    animation: buttonPress 0.1s linear;
+}
+
+.button4:hover {
+    background-color: #49E9B9;
+}
+
+.button4:active {
+    animation: buttonPress 0.1s linear;
+}
+.button5:hover {
+    background-color: #6CF988;
+}
+
+.button5:active {
+    animation: buttonPress 0.1s linear;
+}
+@keyframes buttonPress {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
 .table_style {
     padding: 15px;
 }
@@ -91,7 +187,7 @@ video{
 }
 .input-container {
     margin-bottom: 30px;
-    margin-left: 50px;
+    margin-left: 20px;
     color: aliceblue;
 }
 .tablecontainer{
@@ -136,38 +232,10 @@ video{
     width: 700px;
     height: 400px;
 }
-.button1 {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 30px;
-    margin-top: 20px;
-}
-.button2 {
-    background-color: red; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 30px;
-    margin-left: 5px;
-    margin-top: 20px;
-}
+
 .input-box {
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 30px;
     width: 170px;
 }
 select {

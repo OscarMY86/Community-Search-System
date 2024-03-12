@@ -2,12 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\Backend",
-    "\\Backend\\__pycache__",
     "\\comm-app",
     "\\comm-app\\src",
     "\\comm-app\\src\\components",
     "\\comm-app\\src\\data"
   ],
-  "SelectedNode": "\\comm-app\\src\\serviceWorker.js",
+  "SelectedNode": "\\Backend\\__pycache__",
   "PreviewInSolutionExplorer": false
 }

@@ -25,7 +25,7 @@ def bfs(source, edges):
    return neighbor_distance
 
 
-def convert_to_json(txt_file_path, name_file_path):
+def convert_to_json(txt_file_path, name_file_path,limit):
     id_to_name = load_names(name_file_path)
     community = 1
     nodes = {}
@@ -34,7 +34,8 @@ def convert_to_json(txt_file_path, name_file_path):
     temp_links = []
     edges = defaultdict(list)
     main_node = None
-
+    if limit is not None:
+        limit = int(limit)
     with open(txt_file_path, 'r') as f:
         for line in f:
             parts = line.split()
@@ -46,13 +47,13 @@ def convert_to_json(txt_file_path, name_file_path):
                 edges[node1].append(node2)
                 edges[node2].append(node1)
                 
-                if community_size < 100:
+                if community_size < limit:
                     if node1 not in nodes:
                         name = id_to_name.get(node1, 'Unknown')
                         neighbor_distance = bfs(main_node, edges).get(node1, 0)
                         neighbor_number = len(edges[node1])
                         nodes[node1] = {'name': name, 'group': 0 if node1 == main_node else community, 'neighbor_number': neighbor_number, 'neighbor_distance': neighbor_distance}
-                    if node2 not in nodes and community_size < 100:
+                    if node2 not in nodes and community_size < limit:
                         name = id_to_name.get(node2, 'Unknown')
                         neighbor_distance = bfs(main_node, edges).get(node2, 0)
                         neighbor_number = len(edges[node2])

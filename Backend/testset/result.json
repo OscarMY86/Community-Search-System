@@ -1,4 +1,241 @@
 {
-    "nodes": [],
-    "links": []
+    "nodes": [
+        {
+            "id": "114",
+            "name": "J   ",
+            "group": 0,
+            "neighbor_number": 513,
+            "neighbor_distance": 0
+        },
+        {
+            "id": "348896",
+            "name": "Didier Schwab   ",
+            "group": 1,
+            "neighbor_number": 8,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "112590",
+            "name": "Kriszti   ",
+            "group": 1,
+            "neighbor_number": 14,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "5369",
+            "name": "Xiaobo Sharon Hu   ",
+            "group": 1,
+            "neighbor_number": 17,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "196070",
+            "name": "Ulf Schlichtmann   ",
+            "group": 1,
+            "neighbor_number": 12,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "198444",
+            "name": "Pablo P   ",
+            "group": 1,
+            "neighbor_number": 17,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "14003",
+            "name": "Luk   ",
+            "group": 1,
+            "neighbor_number": 57,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "264681",
+            "name": "Ronny Schneider   ",
+            "group": 1,
+            "neighbor_number": 8,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "56320",
+            "name": "Christian Bauckhage   ",
+            "group": 1,
+            "neighbor_number": 7,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "10883",
+            "name": "Pascal Poncelet   ",
+            "group": 1,
+            "neighbor_number": 8,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "10491",
+            "name": "Gregory Z. Gutin   ",
+            "group": 1,
+            "neighbor_number": 12,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "11986",
+            "name": "Manuel L   ",
+            "group": 1,
+            "neighbor_number": 7,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "11289",
+            "name": "Pascal Fua   ",
+            "group": 1,
+            "neighbor_number": 18,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "12163",
+            "name": "Bal   ",
+            "group": 1,
+            "neighbor_number": 44,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "12719",
+            "name": "Henri Prade   ",
+            "group": 1,
+            "neighbor_number": 14,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "13378",
+            "name": "Ulrich R   ",
+            "group": 1,
+            "neighbor_number": 10,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "13398",
+            "name": "Andrzej Pelc   ",
+            "group": 1,
+            "neighbor_number": 11,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "13410",
+            "name": "Henning Fernau   ",
+            "group": 1,
+            "neighbor_number": 10,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "13836",
+            "name": "David R. Wood   ",
+            "group": 1,
+            "neighbor_number": 12,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "13862",
+            "name": "Csaba D. T   ",
+            "group": 1,
+            "neighbor_number": 13,
+            "neighbor_distance": 1
+        },
+        {
+            "id": "13897",
+            "name": "Anders Yeo   ",
+            "group": 1,
+            "neighbor_number": 9,
+            "neighbor_distance": 1
+        }
+    ],
+    "links": [
+        {
+            "source": "114",
+            "target": "348896"
+        },
+        {
+            "source": "114",
+            "target": "112590"
+        },
+        {
+            "source": "114",
+            "target": "5369"
+        },
+        {
+            "source": "114",
+            "target": "196070"
+        },
+        {
+            "source": "114",
+            "target": "198444"
+        },
+        {
+            "source": "114",
+            "target": "14003"
+        },
+        {
+            "source": "114",
+            "target": "264681"
+        },
+        {
+            "source": "114",
+            "target": "56320"
+        },
+        {
+            "source": "114",
+            "target": "10883"
+        },
+        {
+            "source": "114",
+            "target": "10491"
+        },
+        {
+            "source": "114",
+            "target": "11986"
+        },
+        {
+            "source": "114",
+            "target": "11289"
+        },
+        {
+            "source": "114",
+            "target": "12163"
+        },
+        {
+            "source": "114",
+            "target": "12719"
+        },
+        {
+            "source": "114",
+            "target": "13378"
+        },
+        {
+            "source": "114",
+            "target": "13398"
+        },
+        {
+            "source": "114",
+            "target": "13410"
+        },
+        {
+            "source": "114",
+            "target": "13836"
+        },
+        {
+            "source": "114",
+            "target": "13862"
+        },
+        {
+            "source": "114",
+            "target": "13897"
+        },
+        {
+            "source": "13378",
+            "target": "196070"
+        },
+        {
+            "source": "10491",
+            "target": "13897"
+        }
+    ]
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import ForceDirectedGraph from './ForceDirectedGraph.js';
 import info from "../data/result.json"
 import { Table } from './Table.jsx';
@@ -16,6 +16,7 @@ export const Services = (props) => {
     const [landingTableData, setLandingTableData] = useState({});
     const [limit, setLimit] = useState('100');
     const [Add, handleAdd] = useState(false);
+    const [swiperEnabled] = useState(false);
 
     useEffect(() => {
         setLandingTableData(info);
@@ -47,7 +48,7 @@ export const Services = (props) => {
         setGraphData(null);
 
         // Construct the query string
-        const queryString = `name=${encodeURIComponent(name)}&k=${encodeURIComponent(k)}&option=${encodeURIComponent(selectedOption)}`;
+        const queryString = `name=${encodeURIComponent(name)}&k=${encodeURIComponent(k)}&option=${encodeURIComponent(selectedOption)}&limit=${encodeURIComponent(limit)}`;
 
         // Make the GET request to the Flask backend
         fetch(`http://localhost:5000/search?${queryString}`) // Search API
@@ -77,167 +78,183 @@ export const Services = (props) => {
         setGraphData('');
         setError(null);
     };
+    const handleSave = (event) => {
+        console.log(graphData);
+        if (graphData) {
+            const queryString = `name=${encodeURIComponent(name)}&k=${encodeURIComponent(k)}&option=${encodeURIComponent(selectedOption)}&limit=${encodeURIComponent(limit)}`
+            fetch(`http://localhost:5000/save?${queryString}`)
+                .then((response) => response.json())
+                .then((result) => {
+                    console.log('Data saved successfully:', result);
+                })
+                .catch(error => {
+                    console.error('Error saving data:', error);
+                });
+        }
+    };
     return (
-        
+
         <div id="services" className="text-center">
-            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-            <SwiperSlide>
-                <div className="container">
-                    <div className="section-title">
-                        <h2>Community Search Simulator</h2>
-                        <p>
-                        Please enter the search name and k value to search:
-                        </p>
+            <Swiper navigation={true} modules={[Navigation]} className="mySwiper" touchEventsTarget="container" allowTouchMove={swiperEnabled}>
+                <SwiperSlide>
+                    <div className="container">
+                        <div className="section-title">
+                            <h2>Community Search Simulator</h2>
+                            <p>
+                                Please enter the search name and k value to search:
+                            </p>
+                        </div>
+
+                        <div className="row_table">
+                            <table className="tablecontainer1">
+                                <tr>
+                                    <th>
+                                        <div className="input-container">
+                                            <label>Search name:</label>
+                                        </div>
+                                        <div className="input-box">
+                                            <input className="input-text" type="text" value={name} onChange={handleNameChange} placeholder="Input search name" />
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div className="input-container">
+                                            <label>K-value:</label>
+                                        </div>
+                                        <div className="input-box">
+                                            <input className="input-text" type="integer" value={k} onChange={handlekChange} placeholder="Input integer" />
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div className="input-container">
+                                            <label>Limit:</label>
+                                        </div>
+                                        <div className="input-box">
+                                            <input className="input-text" type="integer" value={limit} onChange={handleLimitChange} placeholder="Input limit" />
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div className="input-box">
+                                            <select value={selectedOption} onChange={handleOptionChange}>
+                                                <option value="core">Core</option>
+                                                <option value="truss">Truss</option>
+                                                {/* <option value="clique">Clique (unavailable)</option> */}
+                                                {/* <option value="ecc">Ecc (unavailable)</option> */}
+                                            </select>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div className="input-button">
+                                            <button className="button1" onClick={(event) => handleSubmit(event)}>Submit</button>
+
+                                            <button className="button2" type='button' onClick={handleReset}>Reset</button>
+
+                                        </div>
+                                    </th>
+                                </tr>
+                            </table>
+                            <table className="tablecontainer">
+                                <tr>
+                                    <th width='1000px'>
+                                        <div className="graph">
+                                            {{ graphData } !== null ? <ForceDirectedGraph graphData={graphData} /> : null}
+                                            {error && <div className="error">{error}</div>}
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <button className="button5" type='button' onClick={handleSave}>Save</button>
+                                        <Table data={landingTableData.nodes} />
+                                    </th>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
-            
-                    <div className="row_table"> 
-                        <table className="tablecontainer1">
-                            <tr>
-                                <th>
-                                    <div className="input-container">
-                                        <label>Search name:</label>
-                                    </div>
-                                    <div className="input-box">
-                                        <input className="input-text" type="text" value={name} onChange={handleNameChange} placeholder="Input search name" />
-                                    </div>
-                                </th>
-                                <th>
-                                    <div className="input-container">
-                                        <label>K-value:</label>
-                                    </div>
-                                    <div className="input-box">
-                                        <input className="input-text" type="integer" value={k} onChange={handlekChange} placeholder="Input integer" />
-                                    </div>
-                                </th>
-                                <th>
-                                    <div className="input-container">
-                                        <label>Limit:</label>
-                                    </div>
-                                    <div className="input-box">
-                                        <input className="input-text" type="integer" value={limit} onChange={handleLimitChange} placeholder="Input limit" />
-                                    </div>
-                                </th>
-                                <th>
-                                    <div className="input-box">
-                                        <select value={selectedOption} onChange={handleOptionChange}>
-                                        <option value="core">Core</option>
-                                        <option value="truss">Truss</option>
-                                        {/* <option value="clique">Clique (unavailable)</option> */}
-                                        {/* <option value="ecc">Ecc (unavailable)</option> */}
-                                        </select>
-                                    </div>
-                                </th>
-                                <th>
-                                    <div className="input-button">
-                                        <button className="button1" onClick={(event) => handleSubmit(event)}>Submit</button>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="container">
+                        <div className="section-title">
+                            <h2>Community Search Simulator</h2>
+                            <p>
+                                Please enter the search name and k value to search:
+                            </p>
+                        </div>
 
-                                        <button className="button2" type='button' onClick={handleReset}>Reset</button>
+                        <div className="row_table">
+                            <table className="tablecontainer1">
+                                <tr>
+                                    <th>
+                                        <div className="input-container">
+                                            <label>Search name:</label>
+                                        </div>
+                                        <div className="input-box">
+                                            <input className="input-text" type="text" value={name} onChange={handleNameChange} placeholder="Input search name" />
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div className="input-container">
+                                            <label>Limit:</label>
+                                        </div>
+                                        <div className="input-box">
+                                            <input className="input-text" type="integer" value={limit} onChange={handleLimitChange} placeholder="Input limit" />
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div className="input-box">
+                                            <select value={selectedOption} onChange={handleOptionChange}>
+                                                <option value="core">Core</option>
+                                                <option value="truss">Truss</option>
+                                                {/* <option value="clique">Clique (unavailable)</option> */}
+                                                {/* <option value="ecc">Ecc (unavailable)</option> */}
+                                            </select>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div className="input-button">
+                                            <button className="button1" onClick={(event) => handleSubmit(event)}>Submit</button>
 
-                                    </div>
-                                </th>
-                            </tr>
-                        </table>
-                        <table className="tablecontainer">
-                            <tr>                 
-                                <th width='1000px'>
-                                    <div className="graph">
-                                        {{ graphData } !== null ? <ForceDirectedGraph graphData={graphData} /> : null}
-                                        {error && <div className="error">{error}</div>}
-                                    </div>
-                                </th>
-                                <th>
-                                    <Table data={landingTableData.nodes} />
-                                </th>
-                            </tr>
-                        </table>
+                                            <button className="button2" type='button' onClick={handleReset}>Reset</button>
+
+                                            <button className="button4" type='button' onClick={() => handleAdd(!Add)}>{Add ? "^" : "+"}</button>
+
+                                        </div>
+                                    </th>
+                                </tr>
+                            </table>
+                            {Add && <table>
+                                <tr>
+                                    <th>
+                                        <div className="input-container">
+                                            <label>Name:</label>
+                                        </div>
+                                        <div className="input-box">
+                                            <input className="input-text" type="text" value={name} onChange={handleNameChange} placeholder="Input search name" />
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div className="input-button">
+                                            <button className="button1" onClick={(event) => handleSubmit(event)}>Submit</button>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </table>}
+                            <table className="tablecontainer">
+                                <tr>
+                                    <th width='1000px'>
+                                        <div className="graph">
+                                            {{ graphData } !== null ? <ForceDirectedGraph graphData={graphData} /> : null}
+                                            {error && <div className="error">{error}</div>}
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <button className="button5" type='button' onClick={handleSave}>Save</button>
+                                        <button className="button3" type='button' onClick={handleDelete}>Delete</button>
+                                        <Table data={landingTableData.nodes} />
+                                    </th>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className="container">
-                    <div className="section-title">
-                        <h2>Community Search Simulator</h2>
-                        <p>
-                        Please enter the search name and k value to search:
-                        </p>
-                    </div>
-            
-                    <div className="row_table"> 
-                        <table className="tablecontainer1">
-                            <tr>
-                                <th>
-                                    <div className="input-container">
-                                        <label>Search name:</label>
-                                    </div>
-                                    <div className="input-box">
-                                        <input className="input-text" type="text" value={name} onChange={handleNameChange} placeholder="Input search name" />
-                                    </div>
-                                </th>
-                                <th>
-                                    <div className="input-container">
-                                        <label>Limit:</label>
-                                    </div>
-                                    <div className="input-box">
-                                        <input className="input-text" type="integer" value={limit} onChange={handleLimitChange} placeholder="Input limit" />
-                                    </div>
-                                </th>
-                                <th>
-                                    <div className="input-box">
-                                        <select value={selectedOption} onChange={handleOptionChange}>
-                                        <option value="core">Core</option>
-                                        <option value="truss">Truss</option>
-                                        {/* <option value="clique">Clique (unavailable)</option> */}
-                                        {/* <option value="ecc">Ecc (unavailable)</option> */}
-                                        </select>
-                                    </div>
-                                </th>
-                                <th>
-                                    <div className="input-button">
-                                        <button className="button1" onClick={(event) => handleSubmit(event)}>Submit</button>
-
-                                        <button className="button2" type='button' onClick={handleReset}>Reset</button>
-
-                                        <button className="button4" type='button' onClick={() => handleAdd(!Add)}>{Add ? "^" : "+"}</button> 
-
-                                    </div>
-                                </th>
-                            </tr>
-                        </table>
-                        {Add && <table>
-                            <tr>
-                                <th>
-                                    <div className="input-container">
-                                        <label>Name:</label>
-                                    </div>
-                                    <div className="input-box">
-                                        <input className="input-text" type="text" value={name} onChange={handleNameChange} placeholder="Input search name" />
-                                    </div>
-                                </th>
-                                <th>
-                                    <div className="input-button">
-                                        <button className="button1" onClick={(event) => handleSubmit(event)}>Submit</button>
-                                    </div>
-                                </th>
-                            </tr>
-                        </table>}
-                        <table className="tablecontainer">
-                            <tr>                 
-                                <th width='1000px'>
-                                    <div className="graph">
-                                        {{ graphData } !== null ? <ForceDirectedGraph graphData={graphData} /> : null}
-                                        {error && <div className="error">{error}</div>}
-                                    </div>
-                                </th>
-                                <th>
-                                    <button className="button3" type='button' onClick={handleDelete}>Delete</button>
-                                    <Table data={landingTableData.nodes} />
-                                </th>
-                            </tr>
-                        </table>
-                    </div>
-                </div>    
-            </SwiperSlide>
-        </Swiper>
-    </div>
-  );
+                </SwiperSlide>
+            </Swiper>
+        </div>
+    );
 };

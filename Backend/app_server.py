@@ -1,10 +1,10 @@
-from flask import Flask, request, jsonify, make_response
+from flask import Flask, request, jsonify, make_response,send_file
 from flask_cors import CORS
 import json
 import subprocess
 import converter
 import os
-
+import shutil
 app = Flask(__name__)
 CORS(app)
 
@@ -12,14 +12,36 @@ CORS(app)
 def index():
     return "Backend server is running"
 
+@app.route('/save', methods=['GET'])
+def save():
+    search_name = request.args.get('name')
+    k = request.args.get('k')
+    method = request.args.get('option')
+    limit = request.args.get('limit')
+    file_name = f"{search_name}_{k}_{method}_{limit}.json"
+    source_file_path = os.path.join("testset", "result.json")
+    target_file_path = os.path.join("testset", file_name)
+
+    try:
+        shutil.copyfile(source_file_path, target_file_path)
+        return send_file(target_file_path, as_attachment=True)
+    except Exception as e:
+        return f"Error: {e}"
+    
 @app.route('/search', methods=['GET'])
 def search():
     search_name = request.args.get('name')
     k = request.args.get('k')
     method = request.args.get('option')
+    limit = request.args.get('limit')
     txt_file_path = ''
     name_file_path = './name2id.txt'
-
+    file_name = f"{search_name}_{k}_{method}_{limit}.json"
+    file_path = os.path.join("testset", file_name)
+    if os.path.exists(file_path):
+        with open(file_path, 'r') as file:
+            json_data = json.load(file)
+        return jsonify(json_data)
     def name_id(name):
         with open('name2id.txt', 'r', encoding='utf-8') as file:
             for line in file:
@@ -46,7 +68,7 @@ def search():
         command = ['./SurveyCS/SurveyCS/kcore/online/kccom', './SurveyCS/SurveyCS/data/Astroph/']
         result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         txt_file_path = f'./SurveyCS/SurveyCS/data/Astroph/corecom/{id}.txt'
-        converter.convert_to_json(txt_file_path, name_file_path)
+        converter.convert_to_json(txt_file_path, name_file_path,limit)
         os.remove(txt_file_path)
 
     if (method == "truss"):
@@ -55,7 +77,7 @@ def search():
         command = ['./SurveyCS/SurveyCS/ktruss/online/ktcom', './SurveyCS/SurveyCS/data/Astroph/']
         result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         txt_file_path = f'./SurveyCS/SurveyCS/data/Astroph/trusscom/{id}.txt'
-        converter.convert_to_json(txt_file_path, name_file_path)
+        converter.convert_to_json(txt_file_path, name_file_path,limit)
         os.remove(txt_file_path)
 
     with open('./testset/result.json') as json_file:
