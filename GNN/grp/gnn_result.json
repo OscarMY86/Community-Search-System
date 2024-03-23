@@ -1,0 +1,402 @@
+{
+    "nodes": [
+        {
+            "id": "10722",
+            "name": "David Lo 0001   "
+        },
+        {
+            "id": "14865",
+            "name": "Irwin King   "
+        },
+        {
+            "id": "14866",
+            "name": "Michael R. Lyu   "
+        },
+        {
+            "id": "559639",
+            "name": "Xin Xia 0001   "
+        },
+        {
+            "id": "563215",
+            "name": "Cuiyun Gao   "
+        },
+        {
+            "id": "14864",
+            "name": "Hao Ma 0001   "
+        },
+        {
+            "id": "4890",
+            "name": "Philip S. Yu   "
+        },
+        {
+            "id": "15019",
+            "name": "Steven C. H. Hoi   "
+        },
+        {
+            "id": "15043",
+            "name": "Rong Jin 0001   "
+        },
+        {
+            "id": "72684",
+            "name": "Kwong-Sak Leung   "
+        },
+        {
+            "id": "220066",
+            "name": "Jia Xu   "
+        },
+        {
+            "id": "473086",
+            "name": "Caiming Xiong   "
+        },
+        {
+            "id": "820067",
+            "name": "Shuming Shi 0001   "
+        },
+        {
+            "id": "15330",
+            "name": "Shenglin Zhao   "
+        },
+        {
+            "id": "23855",
+            "name": "Feng Xia 0001   "
+        },
+        {
+            "id": "88818",
+            "name": "Yifei Zhang   "
+        },
+        {
+            "id": "91440",
+            "name": "Zibin Zheng   "
+        },
+        {
+            "id": "101055",
+            "name": "Haixuan Yang   "
+        },
+        {
+            "id": "106043",
+            "name": "Jing Li 0049   "
+        },
+        {
+            "id": "117078",
+            "name": "Xiaotian Yu   "
+        },
+        {
+            "id": "118970",
+            "name": "Kaizhu Huang   "
+        },
+        {
+            "id": "133629",
+            "name": "Piji Li   "
+        },
+        {
+            "id": "169438",
+            "name": "Xiang Peng   "
+        },
+        {
+            "id": "211535",
+            "name": "Hao Zhu   "
+        },
+        {
+            "id": "270988",
+            "name": "Jianke Zhu   "
+        },
+        {
+            "id": "283168",
+            "name": "Min Zhou 0006   "
+        },
+        {
+            "id": "336827",
+            "name": "Zenglin Xu   "
+        },
+        {
+            "id": "340158",
+            "name": "Xingjian Shi   "
+        },
+        {
+            "id": "340176",
+            "name": "Haiqin Yang   "
+        },
+        {
+            "id": "464408",
+            "name": "Wang Chen   "
+        }
+    ],
+    "links": [
+        {
+            "source": "10722",
+            "target": "14865"
+        },
+        {
+            "source": "10722",
+            "target": "14866"
+        },
+        {
+            "source": "10722",
+            "target": "559639"
+        },
+        {
+            "source": "10722",
+            "target": "563215"
+        },
+        {
+            "source": "14865",
+            "target": "14864"
+        },
+        {
+            "source": "14865",
+            "target": "4890"
+        },
+        {
+            "source": "14865",
+            "target": "14866"
+        },
+        {
+            "source": "14865",
+            "target": "15019"
+        },
+        {
+            "source": "14865",
+            "target": "15043"
+        },
+        {
+            "source": "14865",
+            "target": "72684"
+        },
+        {
+            "source": "14865",
+            "target": "220066"
+        },
+        {
+            "source": "14865",
+            "target": "473086"
+        },
+        {
+            "source": "14865",
+            "target": "820067"
+        },
+        {
+            "source": "14865",
+            "target": "15330"
+        },
+        {
+            "source": "14865",
+            "target": "23855"
+        },
+        {
+            "source": "14865",
+            "target": "88818"
+        },
+        {
+            "source": "14865",
+            "target": "91440"
+        },
+        {
+            "source": "14865",
+            "target": "101055"
+        },
+        {
+            "source": "14865",
+            "target": "106043"
+        },
+        {
+            "source": "14865",
+            "target": "117078"
+        },
+        {
+            "source": "14865",
+            "target": "118970"
+        },
+        {
+            "source": "14865",
+            "target": "133629"
+        },
+        {
+            "source": "14865",
+            "target": "169438"
+        },
+        {
+            "source": "14865",
+            "target": "211535"
+        },
+        {
+            "source": "14865",
+            "target": "270988"
+        },
+        {
+            "source": "14865",
+            "target": "283168"
+        },
+        {
+            "source": "14865",
+            "target": "336827"
+        },
+        {
+            "source": "14865",
+            "target": "340158"
+        },
+        {
+            "source": "14865",
+            "target": "340176"
+        },
+        {
+            "source": "14865",
+            "target": "464408"
+        },
+        {
+            "source": "14865",
+            "target": "559639"
+        },
+        {
+            "source": "14865",
+            "target": "563215"
+        },
+        {
+            "source": "14864",
+            "target": "14866"
+        },
+        {
+            "source": "4890",
+            "target": "473086"
+        },
+        {
+            "source": "14866",
+            "target": "15019"
+        },
+        {
+            "source": "14866",
+            "target": "15043"
+        },
+        {
+            "source": "14866",
+            "target": "220066"
+        },
+        {
+            "source": "14866",
+            "target": "473086"
+        },
+        {
+            "source": "14866",
+            "target": "820067"
+        },
+        {
+            "source": "14866",
+            "target": "15330"
+        },
+        {
+            "source": "14866",
+            "target": "91440"
+        },
+        {
+            "source": "14866",
+            "target": "101055"
+        },
+        {
+            "source": "14866",
+            "target": "106043"
+        },
+        {
+            "source": "14866",
+            "target": "117078"
+        },
+        {
+            "source": "14866",
+            "target": "118970"
+        },
+        {
+            "source": "14866",
+            "target": "133629"
+        },
+        {
+            "source": "14866",
+            "target": "270988"
+        },
+        {
+            "source": "14866",
+            "target": "336827"
+        },
+        {
+            "source": "14866",
+            "target": "340176"
+        },
+        {
+            "source": "14866",
+            "target": "559639"
+        },
+        {
+            "source": "14866",
+            "target": "563215"
+        },
+        {
+            "source": "15019",
+            "target": "15043"
+        },
+        {
+            "source": "15019",
+            "target": "473086"
+        },
+        {
+            "source": "15019",
+            "target": "270988"
+        },
+        {
+            "source": "15019",
+            "target": "336827"
+        },
+        {
+            "source": "15043",
+            "target": "270988"
+        },
+        {
+            "source": "15043",
+            "target": "336827"
+        },
+        {
+            "source": "820067",
+            "target": "106043"
+        },
+        {
+            "source": "820067",
+            "target": "133629"
+        },
+        {
+            "source": "88818",
+            "target": "211535"
+        },
+        {
+            "source": "91440",
+            "target": "563215"
+        },
+        {
+            "source": "106043",
+            "target": "563215"
+        },
+        {
+            "source": "118970",
+            "target": "336827"
+        },
+        {
+            "source": "118970",
+            "target": "340176"
+        },
+        {
+            "source": "133629",
+            "target": "464408"
+        },
+        {
+            "source": "270988",
+            "target": "336827"
+        },
+        {
+            "source": "336827",
+            "target": "340176"
+        },
+        {
+            "source": "336827",
+            "target": "563215"
+        },
+        {
+            "source": "559639",
+            "target": "563215"
+        }
+    ]
+}
