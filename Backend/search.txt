@@ -1,4 +1,4 @@
-Id: 114
-Name: J
-k-value: 7
+Id: 14865
+Name: Irwin King
+k-value: 6
 Method: core
