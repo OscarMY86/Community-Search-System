@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import ForceDirectedGraph from './ForceDirectedGraph.js';
 import info from "../data/result.json"
 import { Table } from './Table.jsx';
@@ -9,10 +9,14 @@ import { Navigation } from 'swiper/modules';
 
 export const Services = (props) => {
     const [name, setName] = useState('');
+    const [GNNname, setGNNName] = useState('');
     const [k, setk] = useState('');
     const [selectedOption, setSelectedOption] = useState('core');
+    const [selectedGNNOption, setSelectedGNNOption] = useState('BFSO');
     const [graphData, setGraphData] = useState("");
+    const [GNNgraphData, setGNNGraphData] = useState("");
     const [error, setError] = useState(null);
+    const [gnnerror, setGNNError] = useState(null);
     const [landingTableData, setLandingTableData] = useState({});
     const [limit, setLimit] = useState('100');
     const [Add, handleAdd] = useState(false);
@@ -21,8 +25,12 @@ export const Services = (props) => {
     useEffect(() => {
         setLandingTableData(info);
     }, []);
+
     const handleNameChange = (event) => {
         setName(event.target.value);
+    };
+    const handleGNNNameChange = (event) => {
+        setGNNName(event.target.value);
     };
 
     const handlekChange = (event) => {
@@ -35,8 +43,12 @@ export const Services = (props) => {
     const handleLimitChange = (event) => {
         setLimit(event.target.value);
     };
+
     const handleOptionChange = (event) => {
         setSelectedOption(event.target.value);
+    };
+    const handleGNNOptionChange = (event) => {
+        setSelectedGNNOption(event.target.value);
     };
     const handleDelete = (event) => {
 
@@ -71,12 +83,45 @@ export const Services = (props) => {
             });
     };
 
+    const handleGNNSubmit = (event) => {
+        event.preventDefault();
+        setGNNError(null);
+        setGNNGraphData(null);
+
+        // Construct the query string
+        const queryGNNString = `name=${encodeURIComponent(GNNname)}&option=${encodeURIComponent(selectedGNNOption)}`;
+
+        // Make the GET request to the Flask backend
+        fetch(`http://localhost:8081/search?${queryGNNString}`) // Search API
+            .then((response) => response.json())
+            .then((result) => {
+                // Handle the response from the backend
+                if (result == null) {
+                    setGNNGraphData(null);
+                    setGNNError('Invalid input');
+                } else {
+                    setGNNGraphData(result);
+                    setGNNError(null);
+                    console.log(result);
+                }
+            })
+            .catch((gnnerror) => {
+                setGNNError('Make sure you input correctly.');
+                setGNNGraphData(null);
+            });
+    };
     const handleReset = () => {
         setName('');
         setk('');
         setSelectedOption('');
         setGraphData('');
         setError(null);
+    };
+    const handleGNNReset = () => {
+        setGNNName('');
+        setSelectedGNNOption('');
+        setGNNGraphData('');
+        setGNNError(null);
     };
     const handleSave = (event) => {
         console.log(graphData);
@@ -186,32 +231,24 @@ export const Services = (props) => {
                                             <label>Search name:</label>
                                         </div>
                                         <div className="input-box">
-                                            <input className="input-text" type="text" value={name} onChange={handleNameChange} placeholder="Input search name" />
-                                        </div>
-                                    </th>
-                                    <th>
-                                        <div className="input-container">
-                                            <label>Limit:</label>
-                                        </div>
-                                        <div className="input-box">
-                                            <input className="input-text" type="integer" value={limit} onChange={handleLimitChange} placeholder="Input limit" />
+                                            <input className="input-text" type="text" value={GNNname} onChange={handleGNNNameChange} placeholder="Input search name" />
                                         </div>
                                     </th>
                                     <th>
                                         <div className="input-box">
-                                            <select value={selectedOption} onChange={handleOptionChange}>
-                                                <option value="core">Core</option>
-                                                <option value="truss">Truss</option>
-                                                {/* <option value="clique">Clique (unavailable)</option> */}
-                                                {/* <option value="ecc">Ecc (unavailable)</option> */}
+                                            <select value={selectedGNNOption} onChange={handleGNNOptionChange}>
+                                                <option value="BFSO">BSF only</option>
+                                                <option value="BFSS">BSF swap</option>
+                                                <option value="GreedyT">Greedy-T</option>
+                                                <option value="GreedyG">Greedy-G</option>
                                             </select>
                                         </div>
                                     </th>
                                     <th>
                                         <div className="input-button">
-                                            <button className="button1" onClick={(event) => handleSubmit(event)}>Submit</button>
+                                            <button className="button1" onClick={(event) => handleGNNSubmit(event)}>Submit</button>
 
-                                            <button className="button2" type='button' onClick={handleReset}>Reset</button>
+                                            <button className="button2" type='button' onClick={handleGNNReset}>Reset</button>
 
                                             <button className="button4" type='button' onClick={() => handleAdd(!Add)}>{Add ? "^" : "+"}</button>
 
@@ -226,12 +263,12 @@ export const Services = (props) => {
                                             <label>Name:</label>
                                         </div>
                                         <div className="input-box">
-                                            <input className="input-text" type="text" value={name} onChange={handleNameChange} placeholder="Input search name" />
+                                            <input className="input-text" type="text" value={GNNname} onChange={handleGNNNameChange} placeholder="Input search name" />
                                         </div>
                                     </th>
                                     <th>
                                         <div className="input-button">
-                                            <button className="button1" onClick={(event) => handleSubmit(event)}>Submit</button>
+                                            <button className="button1" onClick={(event) => handleGNNSubmit(event)}>Submit</button>
                                         </div>
                                     </th>
                                 </tr>
@@ -240,8 +277,8 @@ export const Services = (props) => {
                                 <tr>
                                     <th width='1000px'>
                                         <div className="graph">
-                                            {{ graphData } !== null ? <ForceDirectedGraph graphData={graphData} /> : null}
-                                            {error && <div className="error">{error}</div>}
+                                            {{ GNNgraphData } !== null ? <ForceDirectedGraph graphData={GNNgraphData} /> : null}
+                                            {gnnerror && <div className="error">{gnnerror}</div>}
                                         </div>
                                     </th>
                                     <th>

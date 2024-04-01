@@ -14,8 +14,7 @@ const ForceDirectedGraph = ({ graphData }) =>{
         const color = d3.scaleOrdinal(d3.schemeCategory10);
         
         const links = graphData.links.map(d => ({...d}));
-        const nodes = graphData.nodes.map(d => ({ id: d.id, group: d.group, name: d.name }));
-
+        const nodes = graphData.nodes.map(d => ({ id: d.id  , group: d.group, name: d.name }));
         
         const simulation = d3.forceSimulation(nodes)
         .force("link", d3.forceLink(links).id(d => d.id))

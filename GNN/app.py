@@ -100,7 +100,9 @@ def handle_generate_result():
 
     result = generate_result(option, id)
     convert_to_json(edges_file)
-    return jsonify({'message': result})
+    with open('./grp/gnn_result.json') as json_file:
+        json_data = json.load(json_file)
+    return jsonify(json_data)
 
 if __name__ == '__main__':
     app.run(debug=True, port=8081, host="0.0.0.0")
