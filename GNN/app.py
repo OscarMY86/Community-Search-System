@@ -2,9 +2,10 @@ from flask import Flask, request, jsonify
 import json
 import subprocess
 from src.converter import convert_to_json
+from flask_cors import CORS
 
 app = Flask(__name__)
-
+CORS(app)
 def generate_result(option, graph_id):
     queue_input_file = './grp/queue_input.txt'
     rmapper_file = './grp/rmapper.txt'

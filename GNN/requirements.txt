@@ -4,3 +4,4 @@ pandas==1.4.0
 texttable==1.6.3
 networkx==2.4
 flask==3.0.2
+flask-cors

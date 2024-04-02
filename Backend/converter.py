@@ -42,7 +42,8 @@ def convert_to_json(txt_file_path, name_file_path,limit):
             if parts[0] != '-1':
                 node1, node2 = parts[0], parts[1]
                 if main_node is None:
-                    main_node = node1
+                     with open('./search.txt', 'r') as f:
+                        main_node = f.readline().strip()
                 temp_links.append({'source': node1, 'target': node2})
                 edges[node1].append(node2)
                 edges[node2].append(node1)

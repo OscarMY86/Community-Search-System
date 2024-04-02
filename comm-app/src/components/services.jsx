@@ -92,7 +92,10 @@ export const Services = (props) => {
         const queryGNNString = `name=${encodeURIComponent(GNNname)}&option=${encodeURIComponent(selectedGNNOption)}`;
 
         // Make the GET request to the Flask backend
-        fetch(`http://localhost:8081/search?${queryGNNString}`) // Search API
+        fetch(`http://localhost:8081/search?${queryGNNString}`,{
+            method: "GET", 
+            mode: "cors",
+        }) // Search API
             .then((response) => response.json())
             .then((result) => {
                 // Handle the response from the backend
@@ -106,7 +109,7 @@ export const Services = (props) => {
                 }
             })
             .catch((gnnerror) => {
-                setGNNError('Make sure you input correctly.');
+                setGNNError('Make sure you input correctly for GNN model.');
                 setGNNGraphData(null);
             });
     };
@@ -250,7 +253,7 @@ export const Services = (props) => {
 
                                             <button className="button2" type='button' onClick={handleGNNReset}>Reset</button>
 
-                                            <button className="button4" type='button' onClick={() => handleAdd(!Add)}>{Add ? "^" : "+"}</button>
+                                            {/* <button className="button4" type='button' onClick={() => handleAdd(!Add)}>{Add ? "^" : "+"}</button> */}
 
                                         </div>
                                     </th>
@@ -282,9 +285,9 @@ export const Services = (props) => {
                                         </div>
                                     </th>
                                     <th>
-                                        <button className="button5" type='button' onClick={handleSave}>Save</button>
-                                        <button className="button3" type='button' onClick={handleDelete}>Delete</button>
-                                        <Table data={landingTableData.nodes} />
+                                        {/* <button className="button5" type='button' onClick={handleSave}>Save</button>
+                                        <button className="button3" type='button' onClick={handleDelete}>Delete</button> */}
+                                        {/* <Table data={landingTableData.nodes} /> */}
                                     </th>
                                 </tr>
                             </table>

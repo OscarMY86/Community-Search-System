@@ -1,4 +1,1 @@
-Id: 14865
-Name: Irwin King
-k-value: 6
-Method: core
+14865
