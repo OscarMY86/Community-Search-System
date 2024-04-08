@@ -1,436 +1,328 @@
 {
     "nodes": [
         {
-            "id": "10722",
-            "name": "David Lo 0001   ",
+            "id": "16",
+            "name": "Alejandro P. Buchmann   ",
             "group": 1
         },
         {
-            "id": "14865",
-            "name": "Irwin King   ",
+            "id": "114",
+            "name": "J   ",
             "group": 0
         },
         {
-            "id": "14866",
-            "name": "Michael R. Lyu   ",
+            "id": "2152",
+            "name": "Samuel Kounev   ",
             "group": 1
         },
         {
-            "id": "569270",
-            "name": "Hong Jin Kang   ",
+            "id": "39004",
+            "name": "Dimka Karastoyanova   ",
             "group": 1
         },
         {
-            "id": "343231",
-            "name": "Ferdian Thung   ",
+            "id": "985",
+            "name": "Andreas Hein   ",
             "group": 1
         },
         {
-            "id": "568237",
-            "name": "Tien-Duy B. Le   ",
+            "id": "1062",
+            "name": "Marcel Karnstedt   ",
             "group": 1
         },
         {
-            "id": "4890",
-            "name": "Philip S. Yu   ",
+            "id": "1866",
+            "name": "Walter F. Tichy   ",
             "group": 1
         },
         {
-            "id": "15019",
-            "name": "Steven C. H. Hoi   ",
+            "id": "6139",
+            "name": "Fanny Pascual   ",
             "group": 1
         },
         {
-            "id": "15043",
-            "name": "Rong Jin 0001   ",
+            "id": "7358",
+            "name": "Jan Mendling   ",
             "group": 1
         },
         {
-            "id": "72684",
-            "name": "Kwong-Sak Leung   ",
+            "id": "7533",
+            "name": "Klaus-Dieter Lange   ",
             "group": 1
         },
         {
-            "id": "820067",
-            "name": "Shuming Shi 0001   ",
+            "id": "10019",
+            "name": "Stefano Nolfi   ",
             "group": 1
         },
         {
-            "id": "106043",
-            "name": "Jing Li 0049   ",
+            "id": "10021",
+            "name": "Dario Floreano   ",
             "group": 1
         },
         {
-            "id": "118970",
-            "name": "Kaizhu Huang   ",
+            "id": "11409",
+            "name": "Lirong Xia   ",
             "group": 1
         },
         {
-            "id": "133629",
-            "name": "Piji Li   ",
+            "id": "13308",
+            "name": "Michael Rosemann   ",
             "group": 1
         },
         {
-            "id": "270988",
-            "name": "Jianke Zhu   ",
+            "id": "16129",
+            "name": "Michael Fink 0001   ",
             "group": 1
         },
         {
-            "id": "336827",
-            "name": "Zenglin Xu   ",
+            "id": "16181",
+            "name": "Josiane Xavier Parreira   ",
             "group": 1
         },
         {
-            "id": "340176",
-            "name": "Haiqin Yang   ",
+            "id": "16440",
+            "name": "Quincey Koziol   ",
             "group": 1
         },
         {
-            "id": "464408",
-            "name": "Wang Chen   ",
+            "id": "30007",
+            "name": "Ferenc Szeifert   ",
             "group": 1
         },
         {
-            "id": "593200",
-            "name": "Lidong Bing   ",
+            "id": "34183",
+            "name": "Jan M   ",
             "group": 1
         },
         {
-            "id": "862340",
-            "name": "Man-Ching Yuen   ",
+            "id": "35987",
+            "name": "Stanley J. Osher   ",
             "group": 1
         },
         {
-            "id": "1225166",
-            "name": "Yifan Gao 0001   ",
+            "id": "38371",
+            "name": "Sven Rahmann   ",
             "group": 1
         },
         {
-            "id": "1259076",
-            "name": "Haoli Bai   ",
+            "id": "38805",
+            "name": "Josef K   ",
             "group": 1
         },
         {
-            "id": "1464567",
-            "name": "Hou Pong Chan   ",
+            "id": "39003",
+            "name": "Tammo van Lessen   ",
             "group": 1
         },
         {
-            "id": "1501781",
-            "name": "Yuxin Su 0001   ",
+            "id": "39005",
+            "name": "Frank Leymann   ",
             "group": 1
         },
         {
-            "id": "1532291",
-            "name": "Wenxiang Jiao   ",
+            "id": "39044",
+            "name": "Erich Schikuta   ",
             "group": 1
         },
         {
-            "id": "1578818",
-            "name": "Ziqiao Meng   ",
+            "id": "39254",
+            "name": "Peter Hrastnik   ",
             "group": 1
         },
         {
-            "id": "1596147",
-            "name": "Yue Wang 0034   ",
+            "id": "43457",
+            "name": "Lubom   ",
             "group": 1
         },
         {
-            "id": "729",
-            "name": "Charu C. Aggarwal   ",
+            "id": "45798",
+            "name": "Luca Maria Gambardella   ",
             "group": 1
         },
         {
-            "id": "130085",
-            "name": "Yuchen Zhao   ",
+            "id": "52226",
+            "name": "Markus B   ",
             "group": 1
         },
         {
-            "id": "2051",
-            "name": "Xia Cai   ",
+            "id": "52227",
+            "name": "Helmut Krcmar   ",
             "group": 1
         }
     ],
     "links": [
         {
-            "source": "10722",
-            "target": "14865"
+            "source": "16",
+            "target": "114"
         },
         {
-            "source": "10722",
-            "target": "14866"
+            "source": "16",
+            "target": "2152"
         },
         {
-            "source": "10722",
-            "target": "569270"
+            "source": "16",
+            "target": "39004"
         },
         {
-            "source": "10722",
-            "target": "343231"
+            "source": "114",
+            "target": "985"
         },
         {
-            "source": "10722",
-            "target": "568237"
+            "source": "114",
+            "target": "1062"
         },
         {
-            "source": "14865",
-            "target": "4890"
+            "source": "114",
+            "target": "1866"
         },
         {
-            "source": "14865",
-            "target": "14866"
+            "source": "114",
+            "target": "2152"
         },
         {
-            "source": "14865",
-            "target": "15019"
+            "source": "114",
+            "target": "6139"
         },
         {
-            "source": "14865",
-            "target": "15043"
+            "source": "114",
+            "target": "7358"
         },
         {
-            "source": "14865",
-            "target": "72684"
+            "source": "114",
+            "target": "7533"
         },
         {
-            "source": "14865",
-            "target": "820067"
+            "source": "114",
+            "target": "10019"
         },
         {
-            "source": "14865",
-            "target": "106043"
+            "source": "114",
+            "target": "10021"
         },
         {
-            "source": "14865",
-            "target": "118970"
+            "source": "114",
+            "target": "11409"
         },
         {
-            "source": "14865",
-            "target": "133629"
+            "source": "114",
+            "target": "13308"
         },
         {
-            "source": "14865",
-            "target": "270988"
+            "source": "114",
+            "target": "16129"
         },
         {
-            "source": "14865",
-            "target": "336827"
+            "source": "114",
+            "target": "16181"
         },
         {
-            "source": "14865",
-            "target": "340176"
+            "source": "114",
+            "target": "16440"
         },
         {
-            "source": "14865",
-            "target": "464408"
+            "source": "114",
+            "target": "30007"
         },
         {
-            "source": "14865",
-            "target": "593200"
+            "source": "114",
+            "target": "34183"
         },
         {
-            "source": "14865",
-            "target": "862340"
+            "source": "114",
+            "target": "35987"
         },
         {
-            "source": "14865",
-            "target": "1225166"
+            "source": "114",
+            "target": "38371"
         },
         {
-            "source": "14865",
-            "target": "1259076"
+            "source": "114",
+            "target": "38805"
         },
         {
-            "source": "14865",
-            "target": "1464567"
+            "source": "114",
+            "target": "39003"
         },
         {
-            "source": "14865",
-            "target": "1501781"
+            "source": "114",
+            "target": "39004"
         },
         {
-            "source": "14865",
-            "target": "1532291"
+            "source": "114",
+            "target": "39005"
         },
         {
-            "source": "14865",
-            "target": "1578818"
+            "source": "114",
+            "target": "39044"
         },
         {
-            "source": "14865",
-            "target": "1596147"
+            "source": "114",
+            "target": "39254"
         },
         {
-            "source": "4890",
-            "target": "729"
+            "source": "114",
+            "target": "43457"
         },
         {
-            "source": "4890",
-            "target": "130085"
+            "source": "114",
+            "target": "45798"
         },
         {
-            "source": "14866",
-            "target": "15019"
+            "source": "114",
+            "target": "52226"
         },
         {
-            "source": "14866",
-            "target": "15043"
+            "source": "114",
+            "target": "52227"
         },
         {
-            "source": "14866",
-            "target": "820067"
+            "source": "985",
+            "target": "52226"
         },
         {
-            "source": "14866",
-            "target": "106043"
+            "source": "985",
+            "target": "52227"
         },
         {
-            "source": "14866",
-            "target": "118970"
+            "source": "1062",
+            "target": "16181"
         },
         {
-            "source": "14866",
-            "target": "133629"
+            "source": "2152",
+            "target": "7533"
         },
         {
-            "source": "14866",
-            "target": "270988"
+            "source": "7358",
+            "target": "13308"
         },
         {
-            "source": "14866",
-            "target": "336827"
+            "source": "10019",
+            "target": "10021"
         },
         {
-            "source": "14866",
-            "target": "340176"
+            "source": "10021",
+            "target": "45798"
         },
         {
-            "source": "14866",
-            "target": "593200"
+            "source": "13308",
+            "target": "52227"
         },
         {
-            "source": "14866",
-            "target": "1225166"
+            "source": "39003",
+            "target": "39004"
         },
         {
-            "source": "14866",
-            "target": "1259076"
+            "source": "39003",
+            "target": "39005"
         },
         {
-            "source": "14866",
-            "target": "1501781"
+            "source": "39004",
+            "target": "39005"
         },
         {
-            "source": "14866",
-            "target": "1532291"
-        },
-        {
-            "source": "14866",
-            "target": "1596147"
-        },
-        {
-            "source": "14866",
-            "target": "2051"
-        },
-        {
-            "source": "15019",
-            "target": "15043"
-        },
-        {
-            "source": "15019",
-            "target": "270988"
-        },
-        {
-            "source": "15019",
-            "target": "336827"
-        },
-        {
-            "source": "15019",
-            "target": "1596147"
-        },
-        {
-            "source": "15043",
-            "target": "270988"
-        },
-        {
-            "source": "15043",
-            "target": "336827"
-        },
-        {
-            "source": "72684",
-            "target": "862340"
-        },
-        {
-            "source": "820067",
-            "target": "106043"
-        },
-        {
-            "source": "820067",
-            "target": "133629"
-        },
-        {
-            "source": "820067",
-            "target": "1532291"
-        },
-        {
-            "source": "106043",
-            "target": "1596147"
-        },
-        {
-            "source": "118970",
-            "target": "336827"
-        },
-        {
-            "source": "118970",
-            "target": "340176"
-        },
-        {
-            "source": "133629",
-            "target": "464408"
-        },
-        {
-            "source": "133629",
-            "target": "593200"
-        },
-        {
-            "source": "133629",
-            "target": "1225166"
-        },
-        {
-            "source": "133629",
-            "target": "1464567"
-        },
-        {
-            "source": "270988",
-            "target": "336827"
-        },
-        {
-            "source": "336827",
-            "target": "340176"
-        },
-        {
-            "source": "336827",
-            "target": "1259076"
-        },
-        {
-            "source": "464408",
-            "target": "1464567"
-        },
-        {
-            "source": "593200",
-            "target": "1225166"
-        },
-        {
-            "source": "569270",
-            "target": "343231"
-        },
-        {
-            "source": "343231",
-            "target": "568237"
-        },
-        {
-            "source": "729",
-            "target": "130085"
+            "source": "52226",
+            "target": "52227"
         }
     ]
 }

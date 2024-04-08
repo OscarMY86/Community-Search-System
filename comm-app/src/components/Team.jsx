@@ -8,7 +8,7 @@ export const Team = (props) => {
     const [graphData1, setGraphData1] = useState("");
     const [graphData2, setGraphData2] = useState("");
     const [error, setError] = useState(null);
-
+    const [limit, setLimit] = useState('50')
     const handleNameChange = (event) => {
         setName(event.target.value);
     };
@@ -26,6 +26,9 @@ export const Team = (props) => {
             setk2(value);
         }
     };
+    const handleLimitChange = (event) => {
+        setLimit(event.target.value);
+    };
     const handleSubmit = (event) => {
        
         event.preventDefault();
@@ -34,8 +37,8 @@ export const Team = (props) => {
         setGraphData2(null);
 
         // Construct the query string
-        const queryString1 = `name=${encodeURIComponent(name)}&k=${encodeURIComponent(k1)}&option=${encodeURIComponent('core')}`;
-        const queryString2 = `name=${encodeURIComponent(name)}&k=${encodeURIComponent(k2)}&option=${encodeURIComponent('truss')}`;
+        const queryString1 = `name=${encodeURIComponent(name)}&k=${encodeURIComponent(k1)}&option=${encodeURIComponent('core')}&limit=${encodeURIComponent(limit)}`;
+        const queryString2 = `name=${encodeURIComponent(name)}&k=${encodeURIComponent(k2)}&option=${encodeURIComponent('truss')}&limit=${encodeURIComponent(limit)}`;
         // Make the GET request to the Flask backend
         fetch(`http://localhost:5000/search?${queryString1}`) // Search API
             // fetch(`http://localhost:5000/test?${queryString}`) // Test API
@@ -124,6 +127,14 @@ export const Team = (props) => {
 
                               </div>
                           </th>
+                          <th>
+                                        <div className="input-container">
+                                            <label>Limit:</label>
+                                        </div>
+                                        <div className="input-box">
+                                            <input className="input-text" type="integer" value={limit} onChange={handleLimitChange} placeholder="Input limit" />
+                                        </div>
+                                    </th>   
                           <th>
                               <div className="input-button">
                                   <button className="button1" onClick={(event) => handleSubmit(event)}>Submit</button>
