@@ -2,15 +2,16 @@
   "ExpandedNodes": [
     "",
     "\\Backend",
-    "\\Backend\\SurveyCS",
     "\\Backend\\SurveyCS\\SurveyCS",
     "\\Backend\\SurveyCS\\SurveyCS\\data",
     "\\Backend\\SurveyCS\\SurveyCS\\data\\Astroph",
-    "\\Backend\\testset",
     "\\comm-app",
+    "\\comm-app\\src",
+    "\\comm-app\\src\\components",
+    "\\comm-app\\src\\data",
     "\\GNN",
     "\\GNN\\grp"
   ],
-  "SelectedNode": "\\Backend\\app_server.py",
+  "SelectedNode": "\\GNN\\app.py",
   "PreviewInSolutionExplorer": false
 }

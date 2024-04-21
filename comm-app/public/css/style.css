@@ -205,6 +205,14 @@ video{
     margin-right: auto;
     color: #777;
 }
+.barchart {
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-right: 50px;
+    margin-top: 20px;
+    width: 300px;
+    height: 200px;
+}
 .input-text {
     color: #777;
 }
@@ -216,6 +224,14 @@ video{
     margin-bottom: 50px;
 }
 .graph {
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-right: 50px;
+    margin-top: 20px;
+    width: 1000px;
+    height: 700px;
+}
+.chart {
     background-color: white;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     margin-right: 50px;

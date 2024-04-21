@@ -1,0 +1,364 @@
+{
+    "nodes": [
+        {
+            "id": "14866",
+            "name": "Michael R. Lyu   ",
+            "group": 0
+        },
+        {
+            "id": "10641",
+            "name": "Jianping Zhang   ",
+            "group": 1
+        },
+        {
+            "id": "10722",
+            "name": "David Lo 0001   ",
+            "group": 1
+        },
+        {
+            "id": "14865",
+            "name": "Irwin King   ",
+            "group": 1
+        },
+        {
+            "id": "16320",
+            "name": "Allen P. Nikora   ",
+            "group": 1
+        },
+        {
+            "id": "116387",
+            "name": "Liwei Wang   ",
+            "group": 1
+        },
+        {
+            "id": "190499",
+            "name": "Kam-Wing Ng   ",
+            "group": 1
+        },
+        {
+            "id": "473086",
+            "name": "Caiming Xiong   ",
+            "group": 1
+        },
+        {
+            "id": "820067",
+            "name": "Shuming Shi 0001   ",
+            "group": 1
+        },
+        {
+            "id": "15043",
+            "name": "Rong Jin 0001   ",
+            "group": 1
+        },
+        {
+            "id": "86402",
+            "name": "Sy-Yen Kuo   ",
+            "group": 1
+        },
+        {
+            "id": "181815",
+            "name": "Chin-Yu Huang   ",
+            "group": 1
+        },
+        {
+            "id": "212563",
+            "name": "Weibin Wu   ",
+            "group": 1
+        },
+        {
+            "id": "283324",
+            "name": "Xiao Ling   ",
+            "group": 1
+        },
+        {
+            "id": "864956",
+            "name": "Yongqiang Yang   ",
+            "group": 1
+        },
+        {
+            "id": "1182159",
+            "name": "Tianyi Yang   ",
+            "group": 1
+        },
+        {
+            "id": "1456627",
+            "name": "Jiacheng Shen   ",
+            "group": 1
+        },
+        {
+            "id": "1501781",
+            "name": "Yuxin Su 0001   ",
+            "group": 1
+        },
+        {
+            "id": "1552542",
+            "name": "Cheryl Lee   ",
+            "group": 1
+        },
+        {
+            "id": "1940974",
+            "name": "Jung-Hua Lo   ",
+            "group": 1
+        },
+        {
+            "id": "941786",
+            "name": "Yin Yang 0003   ",
+            "group": 1
+        },
+        {
+            "id": "568956",
+            "name": "John C. Munson   ",
+            "group": 1
+        },
+        {
+            "id": "1537785",
+            "name": "Yu-Chin Chan   ",
+            "group": 1
+        },
+        {
+            "id": "46629",
+            "name": "Bo Yan   ",
+            "group": 1
+        },
+        {
+            "id": "156898",
+            "name": "Hongning Dai   ",
+            "group": 1
+        },
+        {
+            "id": "520",
+            "name": "Anil K. Jain 0001   ",
+            "group": 1
+        },
+        {
+            "id": "10895",
+            "name": "Radha Chitta   ",
+            "group": 1
+        },
+        {
+            "id": "15042",
+            "name": "Tianbao Yang   ",
+            "group": 1
+        },
+        {
+            "id": "2578",
+            "name": "Karim G. Oweiss   ",
+            "group": 1
+        },
+        {
+            "id": "7976",
+            "name": "Zhi-Hua Zhou   ",
+            "group": 1
+        }
+    ],
+    "links": [
+        {
+            "source": "14866",
+            "target": "10641"
+        },
+        {
+            "source": "14866",
+            "target": "10722"
+        },
+        {
+            "source": "14866",
+            "target": "14865"
+        },
+        {
+            "source": "14866",
+            "target": "16320"
+        },
+        {
+            "source": "14866",
+            "target": "116387"
+        },
+        {
+            "source": "14866",
+            "target": "190499"
+        },
+        {
+            "source": "14866",
+            "target": "473086"
+        },
+        {
+            "source": "14866",
+            "target": "820067"
+        },
+        {
+            "source": "14866",
+            "target": "15043"
+        },
+        {
+            "source": "14866",
+            "target": "86402"
+        },
+        {
+            "source": "14866",
+            "target": "181815"
+        },
+        {
+            "source": "14866",
+            "target": "212563"
+        },
+        {
+            "source": "14866",
+            "target": "283324"
+        },
+        {
+            "source": "14866",
+            "target": "864956"
+        },
+        {
+            "source": "14866",
+            "target": "1182159"
+        },
+        {
+            "source": "14866",
+            "target": "1456627"
+        },
+        {
+            "source": "14866",
+            "target": "1501781"
+        },
+        {
+            "source": "14866",
+            "target": "1552542"
+        },
+        {
+            "source": "14866",
+            "target": "1940974"
+        },
+        {
+            "source": "10641",
+            "target": "212563"
+        },
+        {
+            "source": "10641",
+            "target": "1501781"
+        },
+        {
+            "source": "10641",
+            "target": "941786"
+        },
+        {
+            "source": "10722",
+            "target": "14865"
+        },
+        {
+            "source": "14865",
+            "target": "473086"
+        },
+        {
+            "source": "14865",
+            "target": "820067"
+        },
+        {
+            "source": "14865",
+            "target": "15043"
+        },
+        {
+            "source": "14865",
+            "target": "1501781"
+        },
+        {
+            "source": "16320",
+            "target": "568956"
+        },
+        {
+            "source": "116387",
+            "target": "1537785"
+        },
+        {
+            "source": "190499",
+            "target": "46629"
+        },
+        {
+            "source": "190499",
+            "target": "156898"
+        },
+        {
+            "source": "15043",
+            "target": "520"
+        },
+        {
+            "source": "15043",
+            "target": "10895"
+        },
+        {
+            "source": "15043",
+            "target": "15042"
+        },
+        {
+            "source": "15043",
+            "target": "2578"
+        },
+        {
+            "source": "15043",
+            "target": "7976"
+        },
+        {
+            "source": "86402",
+            "target": "181815"
+        },
+        {
+            "source": "86402",
+            "target": "1940974"
+        },
+        {
+            "source": "181815",
+            "target": "1940974"
+        },
+        {
+            "source": "212563",
+            "target": "1501781"
+        },
+        {
+            "source": "283324",
+            "target": "1501781"
+        },
+        {
+            "source": "864956",
+            "target": "1182159"
+        },
+        {
+            "source": "864956",
+            "target": "1456627"
+        },
+        {
+            "source": "864956",
+            "target": "1501781"
+        },
+        {
+            "source": "1182159",
+            "target": "1456627"
+        },
+        {
+            "source": "1182159",
+            "target": "1501781"
+        },
+        {
+            "source": "1182159",
+            "target": "1552542"
+        },
+        {
+            "source": "1456627",
+            "target": "1501781"
+        },
+        {
+            "source": "1501781",
+            "target": "1552542"
+        },
+        {
+            "source": "520",
+            "target": "10895"
+        },
+        {
+            "source": "520",
+            "target": "15042"
+        },
+        {
+            "source": "15042",
+            "target": "7976"
+        }
+    ]
+}

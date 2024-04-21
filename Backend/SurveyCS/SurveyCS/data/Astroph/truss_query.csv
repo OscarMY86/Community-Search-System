@@ -187,3 +187,7 @@ node id,query k,community number,running time(ms)
 114,7,7,7903.27
 node id,query k,community number,running time(ms)
 114,7,7,7194.88
+node id,query k,community number,running time(ms)
+14866,6,1,3895.55
+node id,query k,community number,running time(ms)
+551822,8,1,4068.93

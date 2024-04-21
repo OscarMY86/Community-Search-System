@@ -3,6 +3,7 @@ import json
 import subprocess
 from src.converter import convert_to_json
 from flask_cors import CORS
+import os
 
 app = Flask(__name__)
 CORS(app)
@@ -103,6 +104,8 @@ def handle_generate_result():
     convert_to_json(edges_file)
     with open('./grp/gnn_result.json') as json_file:
         json_data = json.load(json_file)
+    
+    
     return jsonify(json_data)
 
 if __name__ == '__main__':

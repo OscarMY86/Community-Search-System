@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ForceDirectedGraph from './ForceDirectedGraph.js';
 import info from "../data/result.json"
+import info2 from "../data/result.json"
 import { Table } from './Table.jsx';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -19,7 +20,6 @@ export const Services = (props) => {
     const [gnnerror, setGNNError] = useState(null);
     const [landingTableData, setLandingTableData] = useState({});
     const [limit, setLimit] = useState('100');
-    const [Add, handleAdd] = useState(false);
     const [swiperEnabled] = useState(false);
 
     useEffect(() => {
@@ -49,9 +49,6 @@ export const Services = (props) => {
     };
     const handleGNNOptionChange = (event) => {
         setSelectedGNNOption(event.target.value);
-    };
-    const handleDelete = (event) => {
-
     };
 
     const handleSubmit = (event) => {
@@ -253,29 +250,11 @@ export const Services = (props) => {
 
                                             <button className="button2" type='button' onClick={handleGNNReset}>Reset</button>
 
-                                            {/* <button className="button4" type='button' onClick={() => handleAdd(!Add)}>{Add ? "^" : "+"}</button> */}
-
                                         </div>
                                     </th>
                                 </tr>
                             </table>
-                            {Add && <table>
-                                <tr>
-                                    <th>
-                                        <div className="input-container">
-                                            <label>Name:</label>
-                                        </div>
-                                        <div className="input-box">
-                                            <input className="input-text" type="text" value={GNNname} onChange={handleGNNNameChange} placeholder="Input search name" />
-                                        </div>
-                                    </th>
-                                    <th>
-                                        <div className="input-button">
-                                            <button className="button1" onClick={(event) => handleGNNSubmit(event)}>Submit</button>
-                                        </div>
-                                    </th>
-                                </tr>
-                            </table>}
+
                             <table className="tablecontainer">
                                 <tr>
                                     <th width='1000px'>
@@ -284,11 +263,7 @@ export const Services = (props) => {
                                             {gnnerror && <div className="error">{gnnerror}</div>}
                                         </div>
                                     </th>
-                                    <th>
-                                        {/* <button className="button5" type='button' onClick={handleSave}>Save</button>
-                                        <button className="button3" type='button' onClick={handleDelete}>Delete</button> */}
-                                        {/* <Table data={landingTableData.nodes} /> */}
-                                    </th>
+
                                 </tr>
                             </table>
                         </div>
